@@ -3,9 +3,6 @@
    Arquitetura: design system → base → layout → componentes
    ============================================================ */
 
-/* ── Google Fonts ── */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Barlow+Condensed:wght@400;500;600;700;800;900&display=swap');
-
 /* ── Tokens de Design ── */
 :root {
   /* Cores primárias (Adaptadas para PSB: Vermelho e Amarelo) */
