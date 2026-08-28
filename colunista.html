@@ -12,19 +12,17 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="site-header" role="banner">
   <div class="container header-inner">
-    <!-- Logo -->
-    <a href="index.html" class="site-logo" aria-label="Sete Lagoas Política — Início" style="width: 160px; position: relative; height: 100%;">
-      <img src="assets/img/logo.jpg" alt="Logo Sete Lagoas Política" style="position: absolute; top: 5px; left: 0; width: 170px; height: 170px; object-fit: cover; object-position: center 10%; border-radius: 50%; box-shadow: 0 12px 35px rgba(0,0,0,0.3); border: 5px solid var(--branco); background: var(--branco); z-index: 2000; transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+    <a href="index.html" class="site-logo logo-emblema" aria-label="Sete Lagoas Política — Início">
+      <img src="assets/img/logo.jpg" alt="Logo Sete Lagoas Política">
     </a>
     <nav class="site-nav" aria-label="Navegação principal">
       <a href="index.html"     class="nav-link">Início</a>
       <a href="noticias.html"  class="nav-link">Notícias</a>
       <a href="manifesto.html" class="nav-link">Manifesto</a>
       <a href="sobre.html"     class="nav-link">Sobre</a>
-      <a href="colunista.html" class="nav-link active" style="background: var(--vermelho); color: var(--texto); padding: 0.3rem 0.8rem; border-radius: 20px; font-weight: 700; margin-left: 0.5rem;">Colunista</a>
+      <a href="colunista.html" class="nav-link nav-colunista" aria-current="page">Colunista</a>
     </nav>
     <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav">
       <span></span><span></span><span></span>
@@ -35,139 +33,103 @@
     <a href="noticias.html"  class="mobile-nav-link">Notícias</a>
     <a href="manifesto.html" class="mobile-nav-link">Manifesto</a>
     <a href="sobre.html"     class="mobile-nav-link">Sobre</a>
-    <a href="colunista.html" class="mobile-nav-link active">Charles Thomaz</a>
+    <a href="colunista.html" class="mobile-nav-link active">Colunista</a>
   </nav>
 </header>
 
 <main id="conteudo-principal">
-  <!-- ─── CHARLES THOMAZ (APRESENTAÇÃO) ─── -->
-  <section class="section section-alt" id="colunista" aria-labelledby="titulo-colunista" style="padding: 4rem 0;">
-    <div class="container" style="max-width: 900px;">
-      
-      <div class="charles-bloco fade-in" style="background: var(--card-bg); border-radius: var(--radius-xl); padding: 4rem; box-shadow: var(--shadow-lg);">
-        
-        <!-- Cabeçalho -->
-        <div style="display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 3.5rem;">
-          <img src="assets/img/colunista.jpg" alt="Charles Thomaz" style="width: 160px; height: 160px; object-fit: cover; border-radius: 50%; border: 4px solid var(--vermelho); box-shadow: var(--shadow-md); margin-bottom: 1.5rem;">
+  <section class="section section-alt" id="colunista" aria-labelledby="titulo-colunista">
+    <div class="container charles-container">
+      <div class="charles-bloco fade-in">
+
+        <div class="charles-header">
+          <img src="assets/img/colunista.jpg" alt="Charles Thomaz" class="charles-img">
           <span class="section-eyebrow">Me Apresentando</span>
-          <h2 class="section-title" id="titulo-colunista" style="font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--texto);">Quem está por trás do Sete Lagoas Política</h2>
-          <p style="font-size: 1.3rem; color: var(--azul); font-weight: 700; font-family: var(--font-titulo); text-transform: uppercase;">Olá, eu sou Charles Thomaz.</p>
+          <h2 class="section-title" id="titulo-colunista">Quem está por trás do Sete Lagoas Política</h2>
+          <p class="charles-nome">Olá, eu sou Charles Thomaz.</p>
         </div>
 
-        <!-- Conteúdo Textual -->
-        <div class="charles-content" style="color: var(--texto-suave); font-size: 1.1rem; line-height: 1.8;">
-          
-          <p style="margin-bottom: 1.5rem;">O Sete Lagoas Política nasceu de uma inquietação simples: por que a política, que influencia tanto a nossa vida, muitas vezes parece tão distante das pessoas?</p>
-          
-          <p style="margin-bottom: 1.5rem;">Decidi criar este espaço para acompanhar, discutir e explicar a política de Sete Lagoas de uma maneira mais próxima da população.</p>
-          
-          <p style="margin-bottom: 1.5rem;">Não quero que política seja assunto apenas de vereadores, prefeitos, partidos ou períodos eleitorais. Política está presente quando discutimos a qualidade da saúde pública, a educação, o transporte, o emprego, a moradia, o meio ambiente, a cultura, a infraestrutura e as oportunidades que nossa cidade oferece.</p>
-          
-          <p style="margin-bottom: 3rem; font-weight: 700; color: var(--texto); font-size: 1.25rem; text-align: center; border-left: 4px solid var(--vermelho); padding-left: 1rem; border-right: 4px solid var(--vermelho); padding-right: 1rem; display: inline-block; margin-left: auto; margin-right: auto; width: 100%;">
-            Política também é a vida cotidiana.
-          </p>
-          
-          <h3 style="font-family: var(--font-titulo); font-size: 1.8rem; color: var(--texto); margin: 3rem 0 1.2rem; border-bottom: 2px solid var(--vermelho); display: inline-block;">Por que criei o Sete Lagoas Política?</h3>
-          
-          <p style="margin-bottom: 1.5rem;">Durante muito tempo, o debate político ficou preso às disputas eleitorais e às redes sociais. Eu acredito que podemos fazer diferente.</p>
-          
-          <p style="margin-bottom: 1.5rem;">O Sete Lagoas Política pretende ser um espaço para acompanhar o que acontece na cidade, apresentar informações, discutir ideias e estimular as pessoas a participarem mais da vida pública.</p>
-          
-          <p style="margin-bottom: 1.5rem;">A proposta não é simplesmente dizer às pessoas em quem votar. A proposta é ajudar cada pessoa a entender melhor a política e formar sua própria opinião. Porque uma democracia forte precisa de cidadãos informados, críticos e participativos.</p>
+        <div class="charles-content">
+          <p>O Sete Lagoas Política nasceu de uma inquietação simples: por que a política, que influencia tanto a nossa vida, muitas vezes parece tão distante das pessoas?</p>
 
-          <h3 style="font-family: var(--font-titulo); font-size: 1.8rem; color: var(--texto); margin: 3rem 0 1.2rem; border-bottom: 2px solid var(--vermelho); display: inline-block;">Minha visão sobre política</h3>
-          
-          <p style="margin-bottom: 1.5rem;">Para mim, política não deveria começar e terminar nas eleições. Ela acontece todos os dias.</p>
-          
-          <ul style="margin-bottom: 2rem; padding-left: 1.5rem; list-style-type: disc; color: var(--texto); font-weight: 500;">
-            <li style="margin-bottom: 0.8rem;">Quando uma pessoa precisa de atendimento em uma unidade de saúde, existe uma decisão política envolvida.</li>
-            <li style="margin-bottom: 0.8rem;">Quando uma criança precisa de uma escola de qualidade, existe uma decisão política.</li>
-            <li style="margin-bottom: 0.8rem;">Quando um trabalhador enfrenta problemas de transporte, existe uma decisão política.</li>
-            <li style="margin-bottom: 0.8rem;">Quando um bairro precisa de infraestrutura, existe uma decisão política.</li>
+          <p>Decidi criar este espaço para acompanhar, discutir e explicar a política de Sete Lagoas de uma maneira mais próxima da população.</p>
+
+          <p>Não quero que política seja assunto apenas de vereadores, prefeitos, partidos ou períodos eleitorais. Política está presente quando discutimos a qualidade da saúde pública, a educação, o transporte, o emprego, a moradia, o meio ambiente, a cultura, a infraestrutura e as oportunidades que nossa cidade oferece.</p>
+
+          <p class="charles-quote">Política também é a vida cotidiana.</p>
+
+          <h3>Por que criei o Sete Lagoas Política?</h3>
+          <p>Durante muito tempo, o debate político ficou preso às disputas eleitorais e às redes sociais. Eu acredito que podemos fazer diferente.</p>
+          <p>O Sete Lagoas Política pretende ser um espaço para acompanhar o que acontece na cidade, apresentar informações, discutir ideias e estimular as pessoas a participarem mais da vida pública.</p>
+          <p>A proposta não é simplesmente dizer às pessoas em quem votar. A proposta é ajudar cada pessoa a entender melhor a política e formar sua própria opinião. Porque uma democracia forte precisa de cidadãos informados, críticos e participativos.</p>
+
+          <h3>Minha visão sobre política</h3>
+          <p>Para mim, política não deveria começar e terminar nas eleições. Ela acontece todos os dias.</p>
+          <ul>
+            <li>Quando uma pessoa precisa de atendimento em uma unidade de saúde, existe uma decisão política envolvida.</li>
+            <li>Quando uma criança precisa de uma escola de qualidade, existe uma decisão política.</li>
+            <li>Quando um trabalhador enfrenta problemas de transporte, existe uma decisão política.</li>
+            <li>Quando um bairro precisa de infraestrutura, existe uma decisão política.</li>
           </ul>
-          
-          <p style="margin-bottom: 1.5rem;">Quando discutimos emprego, meio ambiente, cultura, segurança, habitação ou desenvolvimento econômico, também estamos falando de política. Por isso, acredito que acompanhar a política municipal é acompanhar a própria cidade.</p>
+          <p>Quando discutimos emprego, meio ambiente, cultura, segurança, habitação ou desenvolvimento econômico, também estamos falando de política. Por isso, acredito que acompanhar a política municipal é acompanhar a própria cidade.</p>
 
-          <h3 style="font-family: var(--font-titulo); font-size: 1.8rem; color: var(--texto); margin: 3rem 0 1.2rem; border-bottom: 2px solid var(--vermelho); display: inline-block;">No que eu acredito</h3>
-          
-          <p style="margin-bottom: 1.5rem;"><strong>Acredito em uma política que coloque as pessoas no centro das decisões.</strong></p>
-          
-          <p style="margin-bottom: 1.5rem;">Acredito na <strong>democracia</strong>, porque nenhuma cidade se desenvolve verdadeiramente sem participação popular.</p>
-          
-          <p style="margin-bottom: 1.5rem;">Acredito na <strong>transparência</strong>, porque o cidadão tem o direito de saber como o poder público funciona e como os recursos públicos são utilizados.</p>
-          
-          <p style="margin-bottom: 1.5rem;">Acredito na <strong>justiça social</strong>, porque desenvolvimento não pode significar apenas crescimento econômico. Uma cidade melhor é aquela que cria oportunidades e melhora a vida de sua população.</p>
-          
-          <p style="margin-bottom: 1.5rem;">Acredito na <strong>participação popular</strong>, porque quem vive os problemas da cidade também precisa ter voz na construção das soluções.</p>
-          
-          <p style="margin-bottom: 1.5rem;">E acredito que o debate político pode ser firme, crítico e apaixonado sem deixar de ser democrático.</p>
+          <h3>No que eu acredito</h3>
+          <p><strong>Acredito em uma política que coloque as pessoas no centro das decisões.</strong></p>
+          <p>Acredito na <strong>democracia</strong>, porque nenhuma cidade se desenvolve verdadeiramente sem participação popular.</p>
+          <p>Acredito na <strong>transparência</strong>, porque o cidadão tem o direito de saber como o poder público funciona e como os recursos públicos são utilizados.</p>
+          <p>Acredito na <strong>justiça social</strong>, porque desenvolvimento não pode significar apenas crescimento econômico. Uma cidade melhor é aquela que cria oportunidades e melhora a vida de sua população.</p>
+          <p>Acredito na <strong>participação popular</strong>, porque quem vive os problemas da cidade também precisa ter voz na construção das soluções.</p>
+          <p>E acredito que o debate político pode ser firme, crítico e apaixonado sem deixar de ser democrático.</p>
 
-          <h3 style="font-family: var(--font-titulo); font-size: 1.8rem; color: var(--texto); margin: 3rem 0 1.2rem; border-bottom: 2px solid var(--vermelho); display: inline-block;">Por que Sete Lagoas?</h3>
-          
-          <p style="margin-bottom: 1.5rem;">Sete Lagoas é uma cidade com história, potencial e muitos desafios.</p>
-          
-          <p style="margin-bottom: 1.5rem;">Temos uma população que trabalha, empreende, estuda, cria famílias e constrói diariamente a cidade em que vivemos. Mas também temos problemas que precisam ser discutidos com seriedade.</p>
-          
-          <p style="margin-bottom: 1.5rem;">Quero que este projeto ajude a colocar esses assuntos em debate. Não acredito que exista uma única pessoa ou um único grupo que tenha todas as respostas. Uma cidade se constrói coletivamente. Por isso, o diálogo é tão importante.</p>
+          <h3>Por que Sete Lagoas?</h3>
+          <p>Sete Lagoas é uma cidade com história, potencial e muitos desafios.</p>
+          <p>Temos uma população que trabalha, empreende, estuda, cria famílias e constrói diariamente a cidade em que vivemos. Mas também temos problemas que precisam ser discutidos com seriedade.</p>
+          <p>Quero que este projeto ajude a colocar esses assuntos em debate. Não acredito que exista uma única pessoa ou um único grupo que tenha todas as respostas. Uma cidade se constrói coletivamente. Por isso, o diálogo é tão importante.</p>
 
-          <h3 style="font-family: var(--font-titulo); font-size: 1.8rem; color: var(--texto); margin: 3rem 0 1.2rem; border-bottom: 2px solid var(--vermelho); display: inline-block;">O que quero construir</h3>
-          
-          <p style="margin-bottom: 1.5rem;">O Sete Lagoas Política ainda está começando. E justamente por isso quero que ele seja construído junto com as pessoas. Quero criar um espaço que possa:</p>
-          
-          <div style="background: var(--fundo-2); padding: 2rem; border-radius: var(--radius-md); margin-bottom: 2.5rem; border-left: 4px solid var(--azul);">
-            <p style="margin-bottom: 1.2rem;"><strong>INFORMAR:</strong> Ajudar as pessoas a entenderem o que acontece na política municipal.</p>
-            <p style="margin-bottom: 1.2rem;"><strong>DEBATER:</strong> Apresentar diferentes ideias e estimular discussões sobre os caminhos da cidade.</p>
-            <p style="margin-bottom: 0;"><strong>PARTICIPAR:</strong> Incentivar cada cidadão a acompanhar, questionar e participar das decisões públicas.</p>
+          <h3>O que quero construir</h3>
+          <p>O Sete Lagoas Política ainda está começando. E justamente por isso quero que ele seja construído junto com as pessoas. Quero criar um espaço que possa:</p>
+          <div class="charles-bloco-destaque">
+            <p><strong>INFORMAR:</strong> Ajudar as pessoas a entenderem o que acontece na política municipal.</p>
+            <p><strong>DEBATER:</strong> Apresentar diferentes ideias e estimular discussões sobre os caminhos da cidade.</p>
+            <p style="margin-bottom:0;"><strong>PARTICIPAR:</strong> Incentivar cada cidadão a acompanhar, questionar e participar das decisões públicas.</p>
           </div>
-          
-          <p style="margin-bottom: 1.5rem;">Não quero construir apenas mais um site. Quero construir um espaço de participação e debate sobre Sete Lagoas.</p>
+          <p>Não quero construir apenas mais um site. Quero construir um espaço de participação e debate sobre Sete Lagoas.</p>
 
-          <h3 style="font-family: var(--font-titulo); font-size: 1.8rem; color: var(--texto); margin: 3rem 0 1.2rem; border-bottom: 2px solid var(--vermelho); display: inline-block;">E este projeto também é uma construção</h3>
-          
-          <p style="margin-bottom: 1.5rem;">Não tenho a pretensão de apresentar todas as respostas. Tenho perguntas. Tenho opiniões. Tenho curiosidade. E, principalmente, tenho vontade de aprender e conversar com outras pessoas.</p>
-          
-          <p style="margin-bottom: 1.5rem;">Acredito que o debate público melhora quando conseguimos ouvir quem pensa diferente, questionar nossas próprias ideias e buscar soluções para os problemas reais da população. É esse espírito que quero trazer para o Sete Lagoas Política.</p>
+          <h3>E este projeto também é uma construção</h3>
+          <p>Não tenho a pretensão de apresentar todas as respostas. Tenho perguntas. Tenho opiniões. Tenho curiosidade. E, principalmente, tenho vontade de aprender e conversar com outras pessoas.</p>
+          <p>Acredito que o debate público melhora quando conseguimos ouvir quem pensa diferente, questionar nossas próprias ideias e buscar soluções para os problemas reais da população. É esse espírito que quero trazer para o Sete Lagoas Política.</p>
 
-          <h3 style="font-family: var(--font-titulo); font-size: 1.8rem; color: var(--texto); margin: 3rem 0 1.2rem; border-bottom: 2px solid var(--vermelho); display: inline-block;">Seja bem-vindo</h3>
-          
-          <p style="margin-bottom: 1.5rem;">Se você chegou até aqui, obrigado por conhecer um pouco mais sobre quem está por trás deste projeto. O Sete Lagoas Política está apenas começando.</p>
-          
-          <p style="margin-bottom: 1.5rem;">Ainda temos muito para construir, muitas histórias para contar e muitos assuntos para discutir. Se você concorda comigo, discorda, tem outra visão ou simplesmente quer conversar sobre a cidade, este espaço também é seu.</p>
-          
-          <p style="margin-bottom: 2.5rem; font-weight: 700; color: var(--texto);">Porque a política não pertence somente aos políticos. A política pertence a todos nós.</p>
-          
-          <div style="text-align: center; border-top: 1px solid var(--borda); padding-top: 2.5rem; margin-top: 1rem;">
-            <p style="font-family: var(--font-titulo); font-size: 2rem; font-weight: 800; color: var(--texto); line-height: 1.1; margin-bottom: 0.5rem; text-transform: uppercase;">Sete Lagoas merece ser discutida.</p>
-            <p style="font-size: 1.2rem; color: var(--azul); font-weight: 700;">E essa conversa está apenas começando.</p>
+          <h3>Seja bem-vindo</h3>
+          <p>Se você chegou até aqui, obrigado por conhecer um pouco mais sobre quem está por trás deste projeto. O Sete Lagoas Política está apenas começando.</p>
+          <p>Ainda temos muito para construir, muitas histórias para contar e muitos assuntos para discutir. Se você concorda comigo, discorda, tem outra visão ou simplesmente quer conversar sobre a cidade, este espaço também é seu.</p>
+          <p><strong>Porque a política não pertence somente aos políticos. A política pertence a todos nós.</strong></p>
+
+          <div class="charles-fecho">
+            <p class="charles-fecho-titulo">Sete Lagoas merece ser discutida.</p>
+            <p class="charles-fecho-sub">E essa conversa está apenas começando.</p>
           </div>
-          
         </div>
       </div>
     </div>
   </section>
 </main>
 
-<!-- FOOTER -->
 <footer class="site-footer" role="contentinfo">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
         <p class="footer-brand-name">SETE LAGOAS POLÍTICA</p>
-        <p class="footer-brand-desc">
-          Diário político, histórico e intelectual de Sete Lagoas.
-        </p>
-        <p class="footer-aviso">
-          Projeto editorial independente.
-        </p>
+        <p class="footer-brand-desc">Diário político, histórico e intelectual de Sete Lagoas.</p>
+        <p class="footer-aviso">Projeto editorial independente.</p>
       </div>
       <nav aria-label="Links do rodapé">
         <p class="footer-nav-title">Navegação</p>
         <ul class="footer-nav-list">
-          <li><a href="index.html"     class="footer-nav-link">Início</a></li>
-          <li><a href="noticias.html"  class="footer-nav-link">Notícias</a></li>
+          <li><a href="index.html" class="footer-nav-link">Início</a></li>
+          <li><a href="noticias.html" class="footer-nav-link">Notícias</a></li>
           <li><a href="manifesto.html" class="footer-nav-link">Manifesto</a></li>
-          <li><a href="sobre.html"     class="footer-nav-link">Sobre</a></li>
-          <li><a href="colunista.html" class="footer-nav-link">Charles Thomaz</a></li>
+          <li><a href="sobre.html" class="footer-nav-link">Sobre</a></li>
+          <li><a href="colunista.html" class="footer-nav-link">Colunista</a></li>
         </ul>
       </nav>
     </div>

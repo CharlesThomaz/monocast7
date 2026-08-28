@@ -1520,6 +1520,102 @@ h1, h2, h3, h4, h5, h6 {
   width: 0%;
 }
 
+/* ── Botão Colunista no Menu ── */
+.nav-colunista {
+  background: var(--vermelho);
+  color: var(--texto) !important;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-weight: 700;
+  margin-left: 0.5rem;
+  transition: all var(--trans-fast);
+}
+.nav-colunista:hover {
+  background: var(--vermelho-esc);
+  transform: scale(1.05);
+}
+
+/* ── Charles Thomaz — Page ── */
+.charles-container { max-width: 900px; }
+.charles-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+.charles-nome {
+  font-size: 1.3rem;
+  color: var(--azul);
+  font-weight: 700;
+  font-family: var(--font-titulo);
+  text-transform: uppercase;
+}
+.charles-content {
+  color: var(--texto-suave);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+.charles-content p { margin-bottom: 1.5rem; }
+.charles-content h3 {
+  font-family: var(--font-titulo);
+  font-size: 1.8rem;
+  color: var(--texto);
+  margin: 3rem 0 1.2rem;
+  border-bottom: 2px solid var(--vermelho);
+  display: inline-block;
+}
+.charles-content ul {
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  color: var(--texto);
+  font-weight: 500;
+}
+.charles-content li { margin-bottom: 0.8rem; }
+.charles-fecho {
+  text-align: center;
+  border-top: 1px solid var(--borda);
+  padding-top: 2.5rem;
+  margin-top: 1rem;
+}
+.charles-fecho-titulo {
+  font-family: var(--font-titulo);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--texto);
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+.charles-fecho-sub {
+  font-size: 1.2rem;
+  color: var(--azul);
+  font-weight: 700;
+}
+
+/* ── Áudio list ── */
+.audio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.audio-card { box-shadow: var(--shadow-sm); }
+.audio-card .card-body { padding: 1.5rem; }
+.audio-card .card-title { font-size: 1.1rem; margin-bottom: 0.5rem; }
+.audio-card .card-text { margin-bottom: 1rem; font-size: 0.85rem; }
+.audio-card audio { width: 100%; }
+
+/* ── Manifesto Download ── */
+.manifesto-downloads {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
 /* ── RESPONSIVIDADE ── */
 
 /* 1024px */
@@ -1529,7 +1625,7 @@ h1, h2, h3, h4, h5, h6 {
   .hero-grid { gap: var(--gap-xl); }
   .hero-title { font-size: clamp(2.2rem, 4.5vw, 3.2rem); }
 
-  .cards-grid { grid-template-columns: repeat(3, 1fr); gap: var(--gap-md); }
+  .cards-grid { grid-template-columns: repeat(2, 1fr); gap: var(--gap-md); }
   .principios-grid { grid-template-columns: repeat(2, 1fr); }
 
   .manifesto-bloco {
@@ -1538,6 +1634,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .manifesto-actions { flex-direction: row; }
+
+  .logo-emblema { width: 120px; }
+  .logo-emblema img { width: 130px; height: 130px; }
 }
 
 /* 768px */
@@ -1565,9 +1664,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .principios-grid { grid-template-columns: 1fr; }
-
   .sobre-grid { grid-template-columns: 1fr; }
-
   .footer-grid { grid-template-columns: 1fr; gap: var(--gap-lg); }
 
   .manifesto-bloco {
@@ -1575,26 +1672,45 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: var(--radius-lg);
   }
 
-  .logo-emblema { width: 80px; }
+  /* Logo mobile */
+  .logo-emblema { width: 70px; }
   .logo-emblema img {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     top: 5px;
     border-width: 3px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   }
+
+  /* Charles page mobile */
   .charles-bloco { padding: 1.5rem; }
-  .charles-img { width: 120px; height: 120px; }
+  .charles-img { width: 110px; height: 110px; }
   .charles-bloco-destaque { padding: 1.25rem; }
-  .charles-quote { font-size: 1.1rem; padding: 0 0.5rem; }
+  .charles-quote { font-size: 1.05rem; padding: 0 0.5rem; }
+  .charles-header { margin-bottom: 2rem; }
+  .charles-content { font-size: 1rem; line-height: 1.7; }
+  .charles-content h3 { font-size: 1.5rem; margin: 2rem 0 1rem; }
+  .charles-fecho-titulo { font-size: 1.6rem; }
+  .charles-nome { font-size: 1.1rem; }
+
+  /* Audio mobile */
+  .audio-list { max-width: 100%; }
+  .audio-card .card-body { padding: 1rem; }
+
+  /* Manifesto downloads mobile */
+  .manifesto-downloads { align-items: stretch; }
+  .manifesto-downloads .btn { width: 100%; text-align: center; justify-content: center; }
+
+  /* Section title mobile */
+  .section-title { font-size: 2rem; }
 }
 
 /* 480px */
 @media (max-width: 480px) {
   :root { --container-pad: 1rem; }
 
-  .hero-title { font-size: 2rem; }
-  .hero-text  { font-size: 1rem; }
+  .hero-title { font-size: 1.8rem; }
+  .hero-text  { font-size: 0.95rem; }
   .hero-actions { flex-direction: column; }
 
   .btn { width: 100%; justify-content: center; }
@@ -1614,13 +1730,37 @@ h1, h2, h3, h4, h5, h6 {
   .section { padding: var(--gap-2xl) 0; }
 
   .filtros-inner { gap: 0.35rem; }
+  .page-hero-title { font-size: 1.8rem; }
 
-  .page-hero-title { font-size: 2.2rem; }
+  /* Logo 480 */
+  .logo-emblema { width: 55px; }
+  .logo-emblema img {
+    width: 65px;
+    height: 65px;
+    top: 3px;
+    border-width: 2px;
+  }
+
+  /* Charles 480 */
+  .charles-bloco { padding: 1.2rem; border-radius: var(--radius-lg); }
+  .charles-img { width: 90px; height: 90px; border-width: 3px; }
+  .charles-content { font-size: 0.95rem; }
+  .charles-content h3 { font-size: 1.35rem; }
+  .charles-quote { font-size: 1rem; border-width: 3px; }
+  .charles-fecho-titulo { font-size: 1.4rem; }
+  .charles-fecho-sub { font-size: 1rem; }
+
+  .section-title { font-size: 1.7rem; }
+  .section-eyebrow { font-size: 0.65rem; }
 }
 
 /* 390px */
 @media (max-width: 390px) {
-  .logo-text-main { font-size: 1rem; }
-  .logo-text-sub  { display: none; }
-  .hero-title     { font-size: 1.8rem; }
+  .hero-title { font-size: 1.6rem; }
+
+  .logo-emblema { width: 50px; }
+  .logo-emblema img { width: 55px; height: 55px; }
+
+  .charles-img { width: 80px; height: 80px; }
+  .charles-content h3 { font-size: 1.2rem; }
 }
