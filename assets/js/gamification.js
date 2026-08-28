@@ -137,6 +137,8 @@ const GamiSystem = {
 
   // UI - Widget
   renderWidget() {
+    if (!document.getElementById('gami-dashboard-mount')) return;
+
     let widget = document.getElementById('gami-header-widget');
     if (!widget) {
       const navContainer = document.querySelector('.header-inner');
