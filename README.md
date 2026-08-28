@@ -24,7 +24,9 @@ Funciona em qualquer navegador moderno sem necessidade de servidor.
 sete-lagoas-politica/
 │
 ├── index.html           ← Homepage
-├── noticias.html        ← Página de notícias com filtros
+├── conhecimentos.html   ← Conceitos básicos de política e economia
+├── conhecimento.html    ← Leitura individual de cada conceito
+├── artigos.html         ← Panorama semanal com artigos autorais
 ├── manifesto.html       ← Síntese editorial do Manifesto PSB
 ├── sobre.html           ← Sobre o projeto
 │
@@ -34,6 +36,9 @@ sete-lagoas-politica/
 │   ├── js/
 │   │   └── app.js       ← JavaScript vanilla (menu, filtros, animações)
 │   └── img/             ← Imagens (para uso futuro)
+│
+├── artigos/
+│   └──                  ← PDFs dos artigos autorais
 │
 ├── documentos/
 │   └── Manifesto_e_Programa_do_PSB.pdf
@@ -46,7 +51,8 @@ sete-lagoas-politica/
 ## Funcionalidades
 
 - [x] Homepage com Hero, Destaques, Bloco Manifesto e Princípios
-- [x] Página de Notícias com filtros por categoria (JavaScript Vanilla)
+- [x] Página de Conhecimentos com fundamentos de política e economia
+- [x] Página de Artigos com panorama semanal e PDFs autorais
 - [x] Página do Manifesto com síntese editorial e navegação interna
 - [x] Página Sobre com missão e eixo editorial
 - [x] Header responsivo com logo + menu desktop

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Conceito fundamental de política e economia para formação cidadã." />
+  <meta property="og:title" content="Conhecimento — Sete Lagoas Política" />
+  <meta property="og:description" content="Conceito fundamental explicado com clareza para formação cidadã." />
+  <meta property="og:type" content="article" />
+  <title>Conhecimento — Sete Lagoas Política</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/gamification.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Barlow+Condensed:wght@500;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<div id="reading-progress" class="reading-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Progresso de leitura"></div>
+
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+    <a href="index.html" class="site-logo logo-emblema" aria-label="Sete Lagoas Política — Início">
+      <img src="assets/img/logo-384.webp" alt="Logo Sete Lagoas Política" width="384" height="384" decoding="async">
+    </a>
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="index.html"         class="nav-link">Início</a>
+      <a href="conhecimentos.html" class="nav-link" aria-current="page">Conhecimentos</a>
+      <a href="artigos.html"       class="nav-link">Artigos</a>
+      <a href="manifesto.html"     class="nav-link">Manifesto</a>
+      <a href="sobre.html"         class="nav-link">Sobre</a>
+      <a href="colunista.html"     class="nav-link nav-colunista">Colunista</a>
+    </nav>
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Menu mobile" aria-hidden="true">
+    <a href="index.html"         class="mobile-nav-link">Início</a>
+    <a href="conhecimentos.html" class="mobile-nav-link">Conhecimentos</a>
+    <a href="artigos.html"       class="mobile-nav-link">Artigos</a>
+    <a href="manifesto.html"     class="mobile-nav-link">Manifesto</a>
+    <a href="sobre.html"         class="mobile-nav-link">Sobre</a>
+    <a href="colunista.html"     class="mobile-nav-link">Charles Thomaz</a>
+  </nav>
+</header>
+
+<main id="conteudo-principal">
+
+  <section class="page-hero conhecimento-hero">
+    <div class="container page-hero-inner">
+      <span id="conhecimento-tipo" class="section-eyebrow conhecimentos-eyebrow"></span>
+      <h1 id="conhecimento-titulo" class="page-hero-title"></h1>
+      <p id="conhecimento-chamada" class="page-hero-sub"></p>
+    </div>
+  </section>
+
+  <article class="section conhecimento-leitura">
+    <div class="container conhecimento-leitura-container">
+      <a href="conhecimentos.html" class="btn btn-ghost">&#8592; Voltar para conhecimentos</a>
+      <div id="conhecimento-conteudo" class="conhecimento-leitura-conteudo"></div>
+    </div>
+  </article>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Sete Lagoas Política — MVP</p>
+      <p class="footer-tag">Formação cidadã · Sete Lagoas/MG</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const temas = {
+  estado: ['Política', 'O que é Estado?', 'Instituições, leis e serviços organizam a vida coletiva.', ['O Estado reúne instituições que exercem autoridade em um território e sobre uma população. Ele cria regras, administra recursos e oferece serviços públicos.', 'Em uma democracia, o Estado não pertence a um governo ou partido. Ele deve funcionar dentro da Constituição, respeitar direitos e prestar contas à sociedade.', 'Entender essa diferença ajuda a separar o que é público do que é interesse particular e a cobrar que as instituições atendam toda a população.']],
+  democracia: ['Política', 'Democracia e cidadania', 'Participação, direitos e controle do poder.', ['Democracia é um modo de organizar o poder com participação popular, eleições, direitos e regras comuns. Ela também exige liberdade de expressão e instituições capazes de fiscalizar autoridades.', 'Cidadania não se resume a votar. Inclui acompanhar políticas, participar de espaços coletivos, cobrar respostas e defender direitos.', 'Quanto mais informada e ativa é a sociedade, maior é a chance de que as decisões públicas reflitam necessidades reais.']],
+  inflacao: ['Economia', 'Inflação e custo de vida', 'Por que os preços sobem e o poder de compra muda.', ['Inflação é o aumento geral dos preços de bens e serviços ao longo do tempo. Ela não significa que apenas um produto ficou mais caro, mas que o conjunto de gastos está pressionando a renda.', 'Quando a renda cresce menos que os preços, as famílias conseguem comprar menos. Por isso, inflação afeta especialmente quem tem orçamento apertado.', 'Acompanhar índices, comparar períodos e observar diferentes cestas de consumo ajuda a compreender como o custo de vida muda.']],
+  orcamento: ['Economia', 'Impostos e orçamento público', 'Como a arrecadação vira política pública.', ['Impostos são contribuições usadas para financiar serviços e políticas públicas. Eles podem incidir sobre renda, consumo, patrimônio e circulação de bens.', 'O orçamento público organiza a previsão de receitas e despesas. Ele mostra prioridades, define limites e permite acompanhar se o planejamento está sendo executado.', 'Conhecer o orçamento ajuda a transformar reclamações gerais em perguntas concretas: quanto será investido, em qual região, em que prazo e com qual resultado esperado.']],
+  poderes: ['Política', 'Os três poderes', 'Separação e equilíbrio para evitar a concentração de poder.', ['O Executivo administra políticas e serviços; o Legislativo cria leis, aprova o orçamento e fiscaliza; o Judiciário interpreta as leis e resolve conflitos.', 'A separação de poderes cria controles recíprocos. Nenhum órgão deveria concentrar sozinho a capacidade de fazer, executar e julgar todas as decisões.', 'Conhecer essas funções ajuda a identificar quem é responsável por cada problema e a fazer cobranças ao órgão correto.']],
+  desigualdade: ['Economia', 'Trabalho e desigualdade', 'Como renda e oportunidades são distribuídas.', ['Desigualdade aparece quando pessoas e grupos têm acesso muito diferente a renda, educação, saúde, moradia, tempo e oportunidades de trabalho.', 'O mercado de trabalho influencia essa distribuição, mas políticas públicas também fazem diferença. Educação, proteção social, serviços universais e direitos trabalhistas podem reduzir desvantagens.', 'Estudar desigualdade é observar não apenas quanto cada pessoa recebe, mas também quais condições permitem ou impedem uma vida digna.']]
+};
+const tema = temas[new URLSearchParams(location.search).get('tema')] || temas.estado;
+document.title = `${tema[1]} — Sete Lagoas Política`;
+document.getElementById('conhecimento-tipo').textContent = tema[0];
+document.getElementById('conhecimento-titulo').textContent = tema[1];
+document.getElementById('conhecimento-chamada').textContent = tema[2];
+document.getElementById('conhecimento-conteudo').innerHTML = tema[3].map(texto => `<p>${texto}</p>`).join('');
+</script>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/gamification.js"></script>
+</body>
+</html>

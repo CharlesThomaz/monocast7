@@ -100,7 +100,7 @@ function initFiltroNoticias() {
 
         if (mostrar) {
           card.removeAttribute('data-hidden');
-          card.style.animation = 'noneAnim 0s';
+          card.style.animation = 'none'; // FIX: 'noneAnim 0s' era inválido
           // Trigger reflow para animação
           void card.offsetWidth;
           card.style.animation = '';
@@ -167,19 +167,18 @@ function initActiveNav() {
     const href = link.getAttribute('href');
     if (!href) return;
 
-    const linkPage = href.split('/').pop();
-
-    if (
-      linkPage === pagePath ||
-      (pagePath === '' && (linkPage === 'index.html' || linkPage === '')) ||
-      (pagePath === 'index.html' && linkPage === '') ||
-      (pagePath === '' && linkPage === 'index.html')
-    ) {
+    // Se já foi marcado via aria-current no HTML, apenas espelha a classe .active
+    if (link.getAttribute('aria-current') === 'page') {
       link.classList.add('active');
+      return;
     }
 
-    // Caso especial: index
-    if ((linkPage === 'index.html' || linkPage === '') && (pagePath === '' || pagePath === 'index.html')) {
+    const linkPage = href.split('/').pop();
+    const isIndex  = (linkPage === 'index.html' || linkPage === '') &&
+                     (pagePath === '' || pagePath === 'index.html');
+    const isMatch  = linkPage === pagePath;
+
+    if (isIndex || isMatch) {
       link.classList.add('active');
     }
   });
@@ -263,4 +262,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initActiveNav();
   initSmoothScroll();
   initHeroAnimation();
+  // Gamificação controlada por gamification.js
 });

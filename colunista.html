@@ -4,13 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Charles Thomaz — Quem está por trás do Sete Lagoas Política." />
+  <meta property="og:title" content="Charles Thomaz — Sete Lagoas Política" />
+  <meta property="og:description" content="Conheça o colunista por trás do Sete Lagoas Política." />
+  <meta property="og:type" content="profile" />
   <title>Charles Thomaz — Sete Lagoas Política</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/gamification.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Barlow+Condensed:wght@500;700;800;900&display=swap" rel="stylesheet" />
 </head>
 <body>
+
+<div id="reading-progress" class="reading-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Progresso de leitura"></div>
 
 <header class="site-header" role="banner">
   <div class="container header-inner">
@@ -19,7 +25,8 @@
     </a>
     <nav class="site-nav" aria-label="Navegação principal">
       <a href="index.html"     class="nav-link">Início</a>
-      <a href="noticias.html"  class="nav-link">Notícias</a>
+      <a href="conhecimentos.html" class="nav-link">Conhecimentos</a>
+      <a href="artigos.html"   class="nav-link">Artigos</a>
       <a href="manifesto.html" class="nav-link">Manifesto</a>
       <a href="sobre.html"     class="nav-link">Sobre</a>
       <a href="colunista.html" class="nav-link nav-colunista" aria-current="page">Colunista</a>
@@ -30,17 +37,18 @@
   </div>
   <nav id="mobile-nav" class="mobile-nav" aria-label="Menu mobile" aria-hidden="true">
     <a href="index.html"     class="mobile-nav-link">Início</a>
-    <a href="noticias.html"  class="mobile-nav-link">Notícias</a>
+    <a href="conhecimentos.html" class="mobile-nav-link">Conhecimentos</a>
+    <a href="artigos.html"   class="mobile-nav-link">Artigos</a>
     <a href="manifesto.html" class="mobile-nav-link">Manifesto</a>
     <a href="sobre.html"     class="mobile-nav-link">Sobre</a>
-    <a href="colunista.html" class="mobile-nav-link active">Colunista</a>
+    <a href="colunista.html" class="mobile-nav-link">Colunista</a>
   </nav>
 </header>
 
 <main id="conteudo-principal">
   <section class="section section-alt" id="colunista" aria-labelledby="titulo-colunista">
     <div class="container charles-container">
-      <div class="charles-bloco fade-in">
+      <div class="charles-bloco">
 
         <div class="charles-header">
           <img src="assets/img/colunista-320.webp" alt="Charles Thomaz" class="charles-img" width="320" height="320" decoding="async">
@@ -126,7 +134,8 @@
         <p class="footer-nav-title">Navegação</p>
         <ul class="footer-nav-list">
           <li><a href="index.html" class="footer-nav-link">Início</a></li>
-          <li><a href="noticias.html" class="footer-nav-link">Notícias</a></li>
+          <li><a href="conhecimentos.html" class="footer-nav-link">Conhecimentos</a></li>
+          <li><a href="artigos.html" class="footer-nav-link">Artigos</a></li>
           <li><a href="manifesto.html" class="footer-nav-link">Manifesto</a></li>
           <li><a href="sobre.html" class="footer-nav-link">Sobre</a></li>
           <li><a href="colunista.html" class="footer-nav-link">Colunista</a></li>
@@ -150,5 +159,6 @@
 </footer>
 
 <script src="assets/js/app.js"></script>
+<script src="assets/js/gamification.js"></script>
 </body>
 </html>

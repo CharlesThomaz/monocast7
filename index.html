@@ -10,6 +10,7 @@
   <meta property="og:type" content="website" />
   <title>Sete Lagoas Política — Início</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/gamification.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Barlow+Condensed:wght@500;700;800;900&display=swap" rel="stylesheet" />
@@ -33,7 +34,8 @@
     <!-- Navegação Desktop -->
     <nav class="site-nav" aria-label="Navegação principal">
       <a href="index.html"     class="nav-link" aria-current="page">Início</a>
-      <a href="noticias.html"  class="nav-link">Notícias</a>
+      <a href="conhecimentos.html" class="nav-link">Conhecimentos</a>
+      <a href="artigos.html"   class="nav-link">Artigos</a>
       <a href="manifesto.html" class="nav-link">Manifesto</a>
       <a href="sobre.html"     class="nav-link">Sobre</a>
       <a href="colunista.html" class="nav-link nav-colunista">Colunista</a>
@@ -57,7 +59,8 @@
   <!-- Navegação Mobile -->
   <nav id="mobile-nav" class="mobile-nav" aria-label="Menu mobile" aria-hidden="true">
     <a href="index.html"     class="mobile-nav-link">Início</a>
-    <a href="noticias.html"  class="mobile-nav-link">Notícias</a>
+    <a href="conhecimentos.html" class="mobile-nav-link">Conhecimentos</a>
+    <a href="artigos.html"   class="mobile-nav-link">Artigos</a>
     <a href="manifesto.html" class="mobile-nav-link">Manifesto</a>
     <a href="sobre.html"     class="mobile-nav-link">Sobre</a>
     <a href="colunista.html" class="mobile-nav-link">Colunista</a>
@@ -93,8 +96,8 @@
           </p>
 
           <div class="hero-actions">
-            <a href="noticias.html" class="btn btn-primary">
-              &#128240; Ler Notícias
+            <a href="artigos.html" class="btn btn-primary">
+              Ler panorama semanal
             </a>
             <a href="manifesto.html" class="btn btn-outline">
               Conhecer o Manifesto &#8594;
@@ -105,31 +108,31 @@
         <!-- Visual Eixo Editorial -->
         <div class="hero-visual" aria-hidden="true">
           <div class="eixo-card">
-            <p class="eixo-titulo">Nosso Eixo Editorial</p>
+            <p class="eixo-titulo">Como pensamos a cidade</p>
             <ol class="eixo-lista">
               <li class="eixo-item">
                 <span class="eixo-num">01</span>
-                <span class="eixo-text">História</span>
+                <span class="eixo-text">História e contexto</span>
               </li>
               <li class="eixo-item">
                 <span class="eixo-num">02</span>
-                <span class="eixo-text">Teoria</span>
+                <span class="eixo-text">Pensamento político</span>
               </li>
               <li class="eixo-item">
                 <span class="eixo-num">03</span>
-                <span class="eixo-text">Brasil</span>
+                <span class="eixo-text">Brasil e cenário nacional</span>
               </li>
               <li class="eixo-item">
                 <span class="eixo-num">04</span>
-                <span class="eixo-text">Minas</span>
+                <span class="eixo-text">Minas Gerais</span>
               </li>
               <li class="eixo-item">
                 <span class="eixo-num">05</span>
-                <span class="eixo-text">Sete Lagoas</span>
+                <span class="eixo-text">Sete Lagoas e região</span>
               </li>
               <li class="eixo-item">
                 <span class="eixo-num">06</span>
-                <span class="eixo-text">Futuro</span>
+                <span class="eixo-text">Futuro e propostas</span>
               </li>
             </ol>
           </div>
@@ -143,82 +146,54 @@
   <section class="section" id="destaques" aria-labelledby="titulo-destaques">
     <div class="container">
       <header class="section-header">
-        <span class="section-eyebrow">Em Destaque</span>
-        <h2 class="section-title" id="titulo-destaques">Debates que importam</h2>
+        <span class="section-eyebrow">Explore a Plataforma</span>
+        <h2 class="section-title" id="titulo-destaques">O que você encontra aqui?</h2>
         <div class="divider"></div>
         <p class="section-subtitle">
-          Análises, reflexões e contexto sobre os temas que moldam o debate político
-          local e nacional.
+          Navegue pelas seções do Sete Lagoas Política. Entenda nossa visão, aprofunde-se com artigos ou participe da nossa trilha gamificada de conhecimentos.
         </p>
       </header>
 
-      <div class="cards-grid">
+      <div class="sitemap-route">
+        <!-- Node 1 -->
+        <div class="route-node fade-in">
+          <a href="manifesto.html" class="route-card" aria-label="Acessar o Manifesto">
+            <p class="route-category">Visão e Valores</p>
+            <h3 class="route-title">1. O Manifesto</h3>
+            <p class="route-desc">Descubra os princípios e a linha editorial que guiam o nosso projeto para a cidade de Sete Lagoas.</p>
+          </a>
+          <div class="route-marker" aria-hidden="true">🎯</div>
+        </div>
 
-        <!-- Card 1 -->
-        <article class="card fade-in" aria-labelledby="card-titulo-1">
-          <div class="card-accent" aria-hidden="true"></div>
-          <div class="card-body">
-            <p class="card-category">Ideias</p>
-            <h3 class="card-title" id="card-titulo-1">
-              "O que significa construir uma política socialista para as cidades?"
-            </h3>
-            <p class="card-text">
-              Uma leitura introdutória sobre democracia, igualdade, liberdade,
-              desenvolvimento e participação social. Como pensar a cidade a partir
-              de princípios progressistas.
-            </p>
-          </div>
-          <footer class="card-footer">
-            <span class="card-date">Editorial · Agosto 2026</span>
-            <a href="manifesto.html" class="btn btn-ghost" aria-label="Ler mais sobre política socialista">
-              Ler mais &#8594;
-            </a>
-          </footer>
-        </article>
+        <!-- Node 2 -->
+        <div class="route-node fade-in">
+          <a href="conhecimentos.html" class="route-card" aria-label="Acessar a Trilha">
+            <p class="route-category">Formação Cidadã</p>
+            <h3 class="route-title">2. A Trilha Gamificada</h3>
+            <p class="route-desc">Aprenda conceitos básicos de política e economia, acumule XP e desbloqueie conquistas na nossa trilha de conhecimentos.</p>
+          </a>
+          <div class="route-marker" aria-hidden="true">🎮</div>
+        </div>
 
-        <!-- Card 2 -->
-        <article class="card fade-in" aria-labelledby="card-titulo-2">
-          <div class="card-accent" aria-hidden="true"></div>
-          <div class="card-body">
-            <p class="card-category">Cidade</p>
-            <h3 class="card-title" id="card-titulo-2">
-              "Sete Lagoas no centro do debate"
-            </h3>
-            <p class="card-text">
-              A política municipal precisa partir dos problemas concretos da
-              população e de informações verificáveis. Análise sobre os desafios
-              urbanos da nossa cidade.
-            </p>
-          </div>
-          <footer class="card-footer">
-            <span class="card-date">Análise · Agosto 2026</span>
-            <a href="noticias.html" class="btn btn-ghost" aria-label="Ler mais sobre Sete Lagoas">
-              Ler mais &#8594;
-            </a>
-          </footer>
-        </article>
+        <!-- Node 3 -->
+        <div class="route-node fade-in">
+          <a href="artigos.html" class="route-card" aria-label="Acessar Artigos">
+            <p class="route-category">Acervo</p>
+            <h3 class="route-title">3. Artigos e Documentos</h3>
+            <p class="route-desc">Mergulhe em textos, análises e documentos oficiais essenciais para compreender o cenário político.</p>
+          </a>
+          <div class="route-marker" aria-hidden="true">📚</div>
+        </div>
 
-        <!-- Card 3 -->
-        <article class="card fade-in" aria-labelledby="card-titulo-3">
-          <div class="card-accent" aria-hidden="true"></div>
-          <div class="card-body">
-            <p class="card-category">Democracia</p>
-            <h3 class="card-title" id="card-titulo-3">
-              "Participação popular e sociedade em rede"
-            </h3>
-            <p class="card-text">
-              Como tecnologia, comunicação e participação podem aproximar cidadãos
-              da política. O papel das redes na democratização do debate público.
-            </p>
-          </div>
-          <footer class="card-footer">
-            <span class="card-date">Reflexão · Agosto 2026</span>
-            <a href="noticias.html" class="btn btn-ghost" aria-label="Ler mais sobre democracia digital">
-              Ler mais &#8594;
-            </a>
-          </footer>
-        </article>
-
+        <!-- Node 4 -->
+        <div class="route-node fade-in">
+          <a href="colunista.html" class="route-card" aria-label="Acessar Colunista">
+            <p class="route-category">Quem Somos</p>
+            <h3 class="route-title">4. O Autor</h3>
+            <p class="route-desc">Conheça Charles Thomaz, a trajetória e a proposta por trás deste canal de cidadania.</p>
+          </a>
+          <div class="route-marker" aria-hidden="true">👋</div>
+        </div>
       </div>
     </div>
   </section>
@@ -300,10 +275,62 @@
           <h3 class="principio-titulo">Cidade</h3>
           <p class="principio-texto">
             Aplicar o debate político aos desafios concretos e verificáveis
-            de Sete Lagoas e da região metropolitana de Belo Horizonte.
+            de Sete Lagoas e dos municípios da região que se relacionam diretamente com a cidade.
           </p>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CURIOSIDADES ─── -->
+  <section class="section bg-light" id="curiosidades" aria-labelledby="titulo-curiosidades" style="background-color: #fafbfc;">
+    <div class="container">
+      <header class="section-header centered">
+        <span class="section-eyebrow">Você Sabia?</span>
+        <h2 class="section-title" id="titulo-curiosidades">Curiosidades e Fatos</h2>
+        <div class="divider" style="margin:1rem auto 1.5rem;"></div>
+        <p class="section-subtitle">
+          Um pouco de história e dados interessantes sobre nossa cidade, nosso estado e nosso país.
+        </p>
+      </header>
+
+      <div class="cards-grid">
+        <!-- Curiosidade 1 -->
+        <article class="card fade-in">
+          <div class="card-accent" aria-hidden="true" style="background: var(--azul);"></div>
+          <div class="card-body">
+            <p class="card-category">📍 Sete Lagoas</p>
+            <h3 class="card-title">Por que Sete Lagoas?</h3>
+            <p class="card-text">
+              O nome não é apenas tradição! Nossa cidade abriga de fato um complexo hídrico urbano composto por sete lagoas principais (entre elas Paulino, Boa Vista e Catarina). Além disso, somos lar da incrível Gruta Rei do Mato, um dos maiores patrimônios espeleológicos do país.
+            </p>
+          </div>
+        </article>
+
+        <!-- Curiosidade 2 -->
+        <article class="card fade-in">
+          <div class="card-accent" aria-hidden="true" style="background: var(--vermelho);"></div>
+          <div class="card-body">
+            <p class="card-category">🔺 Minas Gerais</p>
+            <h3 class="card-title">O Gigante dos Municípios</h3>
+            <p class="card-text">
+              Com exatos 853 municípios, Minas Gerais é o estado com o maior número de cidades no Brasil. Historicamente, também atua como um pêndulo político nacional, sendo berço de movimentos fundamentais para a democracia, como a Inconfidência Mineira.
+            </p>
+          </div>
+        </article>
+
+        <!-- Curiosidade 3 -->
+        <article class="card fade-in">
+          <div class="card-accent" aria-hidden="true" style="background: #0f9e6e;"></div>
+          <div class="card-body">
+            <p class="card-category">🇧🇷 Brasil</p>
+            <h3 class="card-title">A Força do SUS</h3>
+            <p class="card-text">
+              O Brasil possui o maior sistema público de saúde do mundo, o SUS. Ele é um dos maiores exemplos práticos de como políticas públicas e impostos se transformam em atendimento universal, garantindo por lei o acesso à saúde para mais de 200 milhões de habitantes.
+            </p>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -375,7 +402,8 @@
         <p class="footer-nav-title">Navegação</p>
         <ul class="footer-nav-list">
           <li><a href="index.html"     class="footer-nav-link">Início</a></li>
-          <li><a href="noticias.html"  class="footer-nav-link">Notícias</a></li>
+          <li><a href="conhecimentos.html" class="footer-nav-link">Conhecimentos</a></li>
+          <li><a href="artigos.html"   class="footer-nav-link">Artigos</a></li>
           <li><a href="manifesto.html" class="footer-nav-link">Manifesto</a></li>
           <li><a href="sobre.html"     class="footer-nav-link">Sobre</a></li>
           <li><a href="colunista.html" class="footer-nav-link">Colunista</a></li>
@@ -402,5 +430,6 @@
 </footer>
 
 <script src="assets/js/app.js"></script>
+<script src="assets/js/gamification.js"></script>
 </body>
 </html>
