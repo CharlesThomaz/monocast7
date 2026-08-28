@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Notícias e análises sobre política local, democracia, ideias e a cidade de Sete Lagoas — Sete Lagoas Política." />
+  <meta name="keywords" content="Sete Lagoas, notícias, política local, análise, democracia, Minas Gerais" />
+  <meta property="og:title" content="Notícias e Análises — Sete Lagoas Política" />
+  <meta property="og:description" content="Cobertura editorial e análises sobre política, cidade e democracia." />
+  <meta property="og:type" content="website" />
+  <title>Notícias e Análises — Sete Lagoas Política</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Barlow+Condensed:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<div id="reading-progress" class="reading-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Progresso de leitura"></div>
+
+<!-- HEADER -->
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+    <!-- Logo -->
+    <a href="index.html" class="site-logo" aria-label="Sete Lagoas Política — Início" style="width: 160px; position: relative; height: 100%;">
+      <img src="assets/img/logo.jpg" alt="Logo Sete Lagoas Política" style="position: absolute; top: 5px; left: 0; width: 170px; height: 170px; object-fit: cover; object-position: center 10%; border-radius: 50%; box-shadow: 0 12px 35px rgba(0,0,0,0.3); border: 5px solid var(--branco); background: var(--branco); z-index: 2000; transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+    </a>
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="index.html"     class="nav-link">Início</a>
+      <a href="noticias.html"  class="nav-link" aria-current="page">Notícias</a>
+      <a href="manifesto.html" class="nav-link">Manifesto</a>
+      <a href="sobre.html"     class="nav-link">Sobre</a>
+      <a href="colunista.html" class="nav-link" style="background: var(--vermelho); color: var(--texto); padding: 0.3rem 0.8rem; border-radius: 20px; font-weight: 700; margin-left: 0.5rem;">Charles Thomaz</a>
+    </nav>
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Menu mobile" aria-hidden="true">
+    <a href="index.html"     class="mobile-nav-link">Início</a>
+    <a href="noticias.html"  class="mobile-nav-link">Notícias</a>
+    <a href="manifesto.html" class="mobile-nav-link">Manifesto</a>
+    <a href="sobre.html"     class="mobile-nav-link">Sobre</a>
+    <a href="colunista.html" class="mobile-nav-link">Charles Thomaz</a>
+  </nav>
+</header>
+
+<main id="conteudo-principal">
+
+  <!-- HERO DA PÁGINA -->
+  <section class="page-hero" aria-label="Cabeçalho da seção de notícias">
+    <div class="container page-hero-inner">
+      <span class="section-eyebrow" style="color:rgba(255,255,255,0.5);">Portal Editorial</span>
+      <h1 class="page-hero-title">Notícias e Análises</h1>
+      <p class="page-hero-sub">
+        Contexto, reflexão e debate sobre política local, democracia e ideias.
+      </p>
+    </div>
+  </section>
+
+  <!-- BARRA DE FILTROS -->
+  <div class="filtros-bar" role="navigation" aria-label="Filtrar conteúdo por categoria">
+    <div class="container filtros-inner">
+      <span class="filtro-label" aria-hidden="true">Filtrar:</span>
+      <button id="filtro-todas"      class="filtro-btn is-active" data-filtro="todas"      aria-pressed="true">Todas</button>
+      <button id="filtro-cidade"     class="filtro-btn"           data-filtro="cidade"     aria-pressed="false">Cidade</button>
+      <button id="filtro-ideias"     class="filtro-btn"           data-filtro="ideias"     aria-pressed="false">Ideias</button>
+      <button id="filtro-democracia" class="filtro-btn"           data-filtro="democracia" aria-pressed="false">Democracia</button>
+    </div>
+  </div>
+
+  <!-- GRID DE NOTÍCIAS -->
+  <section class="section" aria-label="Lista de artigos e análises">
+    <div class="container">
+      <div class="noticias-grid" id="noticias-grid">
+
+        <!-- 1 -->
+        <article class="noticia-card fade-in" data-categoria="ideias" aria-labelledby="noticia-1-titulo">
+          <div class="noticia-categoria-bar">
+            <span class="noticia-categoria cat-ideias">Ideias</span>
+            <time class="noticia-data" datetime="2026-08-20">20 ago. 2026</time>
+          </div>
+          <div class="noticia-corpo">
+            <h2 class="noticia-titulo" id="noticia-1-titulo">
+              Socialismo democrático: entre a tradição e a renovação
+            </h2>
+            <p class="noticia-resumo">
+              Uma análise editorial sobre como o pensamento socialista se renova no
+              século XXI, incorporando pautas ambientais, digitais e de participação
+              descentralizada. Reflexão com base em correntes teóricas contemporâneas.
+            </p>
+            <a href="manifesto.html" class="btn btn-outline-azul" aria-label="Ler análise sobre socialismo democrático">
+              Ler análise &#8594;
+            </a>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="noticia-card fade-in" data-categoria="cidade" aria-labelledby="noticia-2-titulo">
+          <div class="noticia-categoria-bar">
+            <span class="noticia-categoria cat-cidade">Cidade</span>
+            <time class="noticia-data" datetime="2026-08-18">18 ago. 2026</time>
+          </div>
+          <div class="noticia-corpo">
+            <h2 class="noticia-titulo" id="noticia-2-titulo">
+              Mobilidade urbana e planejamento municipal: o que dizem os especialistas
+            </h2>
+            <p class="noticia-resumo">
+              Contexto editorial sobre os desafios de mobilidade em cidades médias do
+              interior de Minas Gerais. Como o planejamento urbano pode responder à
+              expansão territorial e às demandas por transporte coletivo.
+            </p>
+            <a href="#" class="btn btn-outline-azul" aria-label="Ler análise sobre mobilidade urbana">
+              Ler análise &#8594;
+            </a>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="noticia-card fade-in" data-categoria="democracia" aria-labelledby="noticia-3-titulo">
+          <div class="noticia-categoria-bar">
+            <span class="noticia-categoria cat-democracia">Democracia</span>
+            <time class="noticia-data" datetime="2026-08-15">15 ago. 2026</time>
+          </div>
+          <div class="noticia-corpo">
+            <h2 class="noticia-titulo" id="noticia-3-titulo">
+              Conselhos municipais: espaços de participação que precisam ser fortalecidos
+            </h2>
+            <p class="noticia-resumo">
+              Reflexão sobre o papel dos conselhos municipais como mecanismo de
+              participação popular na gestão pública. A importância da sociedade civil
+              organizada no controle e proposição de políticas locais.
+            </p>
+            <a href="#" class="btn btn-outline-azul" aria-label="Ler análise sobre conselhos municipais">
+              Ler análise &#8594;
+            </a>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="noticia-card fade-in" data-categoria="ideias" aria-labelledby="noticia-4-titulo">
+          <div class="noticia-categoria-bar">
+            <span class="noticia-categoria cat-ideias">Ideias</span>
+            <time class="noticia-data" datetime="2026-08-12">12 ago. 2026</time>
+          </div>
+          <div class="noticia-corpo">
+            <h2 class="noticia-titulo" id="noticia-4-titulo">
+              Economia criativa e desenvolvimento local: novos caminhos para cidades médias
+            </h2>
+            <p class="noticia-resumo">
+              Análise sobre como cidades do interior podem se desenvolver a partir do
+              fomento à cultura, tecnologia e conhecimento. O conceito de economia
+              criativa como alternativa ao modelo apenas industrial.
+            </p>
+            <a href="manifesto.html#desenvolvimento" class="btn btn-outline-azul" aria-label="Ler análise sobre economia criativa">
+              Ler análise &#8594;
+            </a>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="noticia-card fade-in" data-categoria="cidade" aria-labelledby="noticia-5-titulo">
+          <div class="noticia-categoria-bar">
+            <span class="noticia-categoria cat-cidade">Cidade</span>
+            <time class="noticia-data" datetime="2026-08-08">8 ago. 2026</time>
+          </div>
+          <div class="noticia-corpo">
+            <h2 class="noticia-titulo" id="noticia-5-titulo">
+              Habitação e direito à cidade: perspectivas para Sete Lagoas
+            </h2>
+            <p class="noticia-resumo">
+              Contexto editorial sobre o direito à moradia digna e os desafios habitacionais
+              em cidades em expansão. A função social da propriedade e as responsabilidades
+              do poder público local.
+            </p>
+            <a href="#" class="btn btn-outline-azul" aria-label="Ler análise sobre habitação">
+              Ler análise &#8594;
+            </a>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article class="noticia-card fade-in" data-categoria="democracia" aria-labelledby="noticia-6-titulo">
+          <div class="noticia-categoria-bar">
+            <span class="noticia-categoria cat-democracia">Democracia</span>
+            <time class="noticia-data" datetime="2026-08-05">5 ago. 2026</time>
+          </div>
+          <div class="noticia-corpo">
+            <h2 class="noticia-titulo" id="noticia-6-titulo">
+              Transparência pública e acesso à informação: direitos que precisam ser exercidos
+            </h2>
+            <p class="noticia-resumo">
+              O acesso à informação pública é um direito garantido pela Lei 12.527/2011.
+              Reflexão editorial sobre como a transparência fortalece a democracia e
+              permite o controle social da gestão pública.
+            </p>
+            <a href="#" class="btn btn-outline-azul" aria-label="Ler análise sobre transparência pública">
+              Ler análise &#8594;
+            </a>
+          </div>
+        </article>
+
+        <!-- 7 -->
+        <article class="noticia-card fade-in" data-categoria="cidade" aria-labelledby="noticia-7-titulo">
+          <div class="noticia-categoria-bar">
+            <span class="noticia-categoria cat-cidade">Cidade</span>
+            <time class="noticia-data" datetime="2026-08-01">1 ago. 2026</time>
+          </div>
+          <div class="noticia-corpo">
+            <h2 class="noticia-titulo" id="noticia-7-titulo">
+              Saneamento básico como questão de saúde pública e igualdade social
+            </h2>
+            <p class="noticia-resumo">
+              Análise editorial sobre a relação entre saneamento, saúde e redução de
+              desigualdades. O Marco Legal do Saneamento e seus impactos para municípios
+              de médio porte como Sete Lagoas.
+            </p>
+            <a href="#" class="btn btn-outline-azul" aria-label="Ler análise sobre saneamento">
+              Ler análise &#8594;
+            </a>
+          </div>
+        </article>
+
+        <!-- 8 -->
+        <article class="noticia-card fade-in" data-categoria="ideias" aria-labelledby="noticia-8-titulo">
+          <div class="noticia-categoria-bar">
+            <span class="noticia-categoria cat-ideias">Ideias</span>
+            <time class="noticia-data" datetime="2026-07-28">28 jul. 2026</time>
+          </div>
+          <div class="noticia-corpo">
+            <h2 class="noticia-titulo" id="noticia-8-titulo">
+              O papel da juventude na renovação da política local
+            </h2>
+            <p class="noticia-resumo">
+              Reflexão editorial sobre a importância da participação juvenil na política
+              municipal. Como os jovens podem contribuir para renovar práticas e pautar
+              novos temas no debate público local.
+            </p>
+            <a href="manifesto.html#juventude" class="btn btn-outline-azul" aria-label="Ler análise sobre juventude na política">
+              Ler análise &#8594;
+            </a>
+          </div>
+        </article>
+
+        <!-- 9 -->
+        <article class="noticia-card fade-in" data-categoria="democracia" aria-labelledby="noticia-9-titulo">
+          <div class="noticia-categoria-bar">
+            <span class="noticia-categoria cat-democracia">Democracia</span>
+            <time class="noticia-data" datetime="2026-07-22">22 jul. 2026</time>
+          </div>
+          <div class="noticia-corpo">
+            <h2 class="noticia-titulo" id="noticia-9-titulo">
+              Câmara municipal: representação, autonomia e controle social
+            </h2>
+            <p class="noticia-resumo">
+              Contexto sobre o papel do legislativo municipal na democracia local.
+              A câmara como espaço de representação popular e fiscalização do executivo.
+              O que significa uma câmara ativa e comprometida com o interesse público.
+            </p>
+            <a href="#" class="btn btn-outline-azul" aria-label="Ler análise sobre câmara municipal">
+              Ler análise &#8594;
+            </a>
+          </div>
+        </article>
+
+        <!-- Mensagem sem resultados -->
+        <p id="sem-resultados" class="sem-resultados" role="status" aria-live="polite">
+          Nenhum conteúdo encontrado para esta categoria.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="footer-brand-name">SETE LAGOAS POLÍTICA</p>
+        <p class="footer-brand-desc">
+          Diário político, histórico e intelectual de Sete Lagoas.
+        </p>
+        <p class="footer-aviso">
+          Projeto editorial independente. Conteúdos factuais devem ser acompanhados
+          de fontes públicas e verificáveis.
+        </p>
+      </div>
+      <nav aria-label="Links do rodapé">
+        <p class="footer-nav-title">Navegação</p>
+        <ul class="footer-nav-list">
+          <li><a href="index.html"     class="footer-nav-link">Início</a></li>
+          <li><a href="noticias.html"  class="footer-nav-link">Notícias</a></li>
+          <li><a href="manifesto.html" class="footer-nav-link">Manifesto</a></li>
+          <li><a href="sobre.html"     class="footer-nav-link">Sobre</a></li>
+          <li><a href="colunista.html" class="footer-nav-link">Charles Thomaz</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Sete Lagoas Política — MVP</p>
+      <p class="footer-tag">Portal Editorial Independente · Sete Lagoas/MG</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

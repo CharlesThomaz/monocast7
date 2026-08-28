@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sete Lagoas Política — Diário político, histórico e intelectual de Sete Lagoas. Política municipal, análises, história e participação cidadã." />
+  <meta name="keywords" content="Sete Lagoas, política, democracia, Minas Gerais, participação cidadã, análise política" />
+  <meta property="og:title" content="Sete Lagoas Política" />
+  <meta property="og:description" content="Diário político, histórico e intelectual de Sete Lagoas." />
+  <meta property="og:type" content="website" />
+  <title>Sete Lagoas Política — Início</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Barlow+Condensed:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- Barra de progresso de leitura -->
+<div id="reading-progress" class="reading-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Progresso de leitura"></div>
+
+<!-- ═══════════════════════════════════════════
+     HEADER
+     ═══════════════════════════════════════════ -->
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+
+    <!-- Logo -->
+    <a href="index.html" class="site-logo" aria-label="Sete Lagoas Política — Início" style="width: 160px; position: relative; height: 100%;">
+      <img src="assets/img/logo.jpg" alt="Logo Sete Lagoas Política" style="position: absolute; top: 5px; left: 0; width: 170px; height: 170px; object-fit: cover; object-position: center 10%; border-radius: 50%; box-shadow: 0 12px 35px rgba(0,0,0,0.3); border: 5px solid var(--branco); background: var(--branco); z-index: 2000; transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+    </a>
+
+    <!-- Navegação Desktop -->
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="index.html"     class="nav-link" aria-current="page">Início</a>
+      <a href="noticias.html"  class="nav-link">Notícias</a>
+      <a href="manifesto.html" class="nav-link">Manifesto</a>
+      <a href="sobre.html"     class="nav-link">Sobre</a>
+      <a href="colunista.html" class="nav-link" style="background: var(--vermelho); color: var(--texto); padding: 0.3rem 0.8rem; border-radius: 20px; font-weight: 700; margin-left: 0.5rem;">Colunista</a>
+    </nav>
+
+    <!-- Botão Hamburger -->
+    <button
+      id="menu-toggle"
+      class="menu-toggle"
+      aria-label="Abrir menu"
+      aria-expanded="false"
+      aria-controls="mobile-nav"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+
+  <!-- Navegação Mobile -->
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Menu mobile" aria-hidden="true">
+    <a href="index.html"     class="mobile-nav-link">Início</a>
+    <a href="noticias.html"  class="mobile-nav-link">Notícias</a>
+    <a href="manifesto.html" class="mobile-nav-link">Manifesto</a>
+    <a href="sobre.html"     class="mobile-nav-link">Sobre</a>
+    <a href="colunista.html" class="mobile-nav-link">Colunista</a>
+  </nav>
+</header>
+
+<!-- ═══════════════════════════════════════════
+     MAIN
+     ═══════════════════════════════════════════ -->
+<main id="conteudo-principal">
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" aria-label="Destaque principal">
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- Conteúdo Hero -->
+        <div class="hero-content">
+          <span class="hero-label">
+            <span class="hero-label-dot" aria-hidden="true"></span>
+            Portal Editorial Independente · Sete Lagoas/MG
+          </span>
+
+          <h1 class="hero-title">
+            HISTÓRIA, TEORIA<br />
+            E POLÍTICA PARA<br />
+            <em>PENSAR A NOSSA CIDADE.</em>
+          </h1>
+
+          <p class="hero-text">
+            Um espaço para acompanhar a política local, estudar ideias e transformar
+            debate público em participação cidadã.
+          </p>
+
+          <div class="hero-actions">
+            <a href="noticias.html" class="btn btn-primary">
+              &#128240; Ler Notícias
+            </a>
+            <a href="manifesto.html" class="btn btn-outline">
+              Conhecer o Manifesto &#8594;
+            </a>
+          </div>
+        </div>
+
+        <!-- Visual Eixo Editorial -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="eixo-card">
+            <p class="eixo-titulo">Nosso Eixo Editorial</p>
+            <ol class="eixo-lista">
+              <li class="eixo-item">
+                <span class="eixo-num">01</span>
+                <span class="eixo-text">História</span>
+              </li>
+              <li class="eixo-item">
+                <span class="eixo-num">02</span>
+                <span class="eixo-text">Teoria</span>
+              </li>
+              <li class="eixo-item">
+                <span class="eixo-num">03</span>
+                <span class="eixo-text">Brasil</span>
+              </li>
+              <li class="eixo-item">
+                <span class="eixo-num">04</span>
+                <span class="eixo-text">Minas</span>
+              </li>
+              <li class="eixo-item">
+                <span class="eixo-num">05</span>
+                <span class="eixo-text">Sete Lagoas</span>
+              </li>
+              <li class="eixo-item">
+                <span class="eixo-num">06</span>
+                <span class="eixo-text">Futuro</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── DESTAQUES ─── -->
+  <section class="section" id="destaques" aria-labelledby="titulo-destaques">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-eyebrow">Em Destaque</span>
+        <h2 class="section-title" id="titulo-destaques">Debates que importam</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">
+          Análises, reflexões e contexto sobre os temas que moldam o debate político
+          local e nacional.
+        </p>
+      </header>
+
+      <div class="cards-grid">
+
+        <!-- Card 1 -->
+        <article class="card fade-in" aria-labelledby="card-titulo-1">
+          <div class="card-accent" aria-hidden="true"></div>
+          <div class="card-body">
+            <p class="card-category">Ideias</p>
+            <h3 class="card-title" id="card-titulo-1">
+              "O que significa construir uma política socialista para as cidades?"
+            </h3>
+            <p class="card-text">
+              Uma leitura introdutória sobre democracia, igualdade, liberdade,
+              desenvolvimento e participação social. Como pensar a cidade a partir
+              de princípios progressistas.
+            </p>
+          </div>
+          <footer class="card-footer">
+            <span class="card-date">Editorial · Agosto 2026</span>
+            <a href="manifesto.html" class="btn btn-ghost" aria-label="Ler mais sobre política socialista">
+              Ler mais &#8594;
+            </a>
+          </footer>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card fade-in" aria-labelledby="card-titulo-2">
+          <div class="card-accent" aria-hidden="true"></div>
+          <div class="card-body">
+            <p class="card-category">Cidade</p>
+            <h3 class="card-title" id="card-titulo-2">
+              "Sete Lagoas no centro do debate"
+            </h3>
+            <p class="card-text">
+              A política municipal precisa partir dos problemas concretos da
+              população e de informações verificáveis. Análise sobre os desafios
+              urbanos da nossa cidade.
+            </p>
+          </div>
+          <footer class="card-footer">
+            <span class="card-date">Análise · Agosto 2026</span>
+            <a href="noticias.html" class="btn btn-ghost" aria-label="Ler mais sobre Sete Lagoas">
+              Ler mais &#8594;
+            </a>
+          </footer>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card fade-in" aria-labelledby="card-titulo-3">
+          <div class="card-accent" aria-hidden="true"></div>
+          <div class="card-body">
+            <p class="card-category">Democracia</p>
+            <h3 class="card-title" id="card-titulo-3">
+              "Participação popular e sociedade em rede"
+            </h3>
+            <p class="card-text">
+              Como tecnologia, comunicação e participação podem aproximar cidadãos
+              da política. O papel das redes na democratização do debate público.
+            </p>
+          </div>
+          <footer class="card-footer">
+            <span class="card-date">Reflexão · Agosto 2026</span>
+            <a href="noticias.html" class="btn btn-ghost" aria-label="Ler mais sobre democracia digital">
+              Ler mais &#8594;
+            </a>
+          </footer>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── MANIFESTO BLOCO ─── -->
+  <section class="section" id="manifesto-home" aria-labelledby="titulo-manifesto-home">
+    <div class="container">
+      <div class="manifesto-bloco fade-in">
+        <div class="manifesto-bloco-texto">
+          <span class="section-eyebrow">Documento de Referência</span>
+          <h2 class="section-title" id="titulo-manifesto-home">Manifesto e Programa</h2>
+          <div class="divider"></div>
+          <p class="section-subtitle">
+            Conheça o documento que reúne princípios, propostas e conceitos que
+            servem como referência para parte da linha editorial deste projeto.
+            Fonte: Manifesto e Programa do PSB — XV Congresso, 2022.
+          </p>
+        </div>
+        <div class="manifesto-actions">
+          <a href="manifesto.html" class="btn btn-primary">
+            Ler Manifesto
+          </a>
+          <a
+            href="documentos/Manifesto_e_Programa_do_PSB.pdf"
+            class="btn btn-outline"
+            download="Manifesto_e_Programa_do_PSB.pdf"
+            aria-label="Baixar PDF do Manifesto e Programa do PSB"
+          >
+            &#11123; Baixar PDF
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PRINCÍPIOS ─── -->
+  <section class="section" id="principios" aria-labelledby="titulo-principios">
+    <div class="container">
+      <header class="section-header centered">
+        <span class="section-eyebrow">Fundamentos</span>
+        <h2 class="section-title" id="titulo-principios">Princípios Editoriais</h2>
+        <div class="divider" style="margin:1rem auto 1.5rem;"></div>
+        <p class="section-subtitle">
+          Os eixos que orientam a produção de conteúdo e o olhar editorial deste portal.
+        </p>
+      </header>
+
+      <div class="principios-grid">
+
+        <div class="principio-item fade-in">
+          <p class="principio-num" aria-hidden="true">01</p>
+          <h3 class="principio-titulo">Democracia</h3>
+          <p class="principio-texto">
+            Fortalecimento das instituições, participação cidadã e ampliação do
+            espaço público como condições para o avanço social.
+          </p>
+        </div>
+
+        <div class="principio-item fade-in">
+          <p class="principio-num" aria-hidden="true">02</p>
+          <h3 class="principio-titulo">Igualdade</h3>
+          <p class="principio-texto">
+            Enfrentamento das desigualdades sociais, econômicas e territoriais.
+            Construção de oportunidades reais para todos.
+          </p>
+        </div>
+
+        <div class="principio-item fade-in">
+          <p class="principio-num" aria-hidden="true">03</p>
+          <h3 class="principio-titulo">Desenvolvimento</h3>
+          <p class="principio-texto">
+            Inovação, economia criativa, indústria, sustentabilidade e
+            desenvolvimento com base na ciência e no trabalho.
+          </p>
+        </div>
+
+        <div class="principio-item fade-in">
+          <p class="principio-num" aria-hidden="true">04</p>
+          <h3 class="principio-titulo">Cidade</h3>
+          <p class="principio-texto">
+            Aplicar o debate político aos desafios concretos e verificáveis
+            de Sete Lagoas e da região metropolitana de Belo Horizonte.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── MULTIMÍDIA / ÁUDIO ─── -->
+  <section class="section section-alt" id="audio" aria-labelledby="titulo-audio">
+    <div class="container">
+      <header class="section-header centered">
+        <span class="section-eyebrow">Multimídia</span>
+        <h2 class="section-title" id="titulo-audio">Ouça nossos conteúdos</h2>
+        <div class="divider" style="margin:1rem auto 1.5rem;"></div>
+        <p class="section-subtitle">
+          Acompanhe análises e discussões em formato de áudio.
+        </p>
+      </header>
+
+      <div style="display:flex; flex-direction:column; gap:1.5rem; max-width:600px; margin:0 auto;">
+        
+        <!-- Áudio 1 -->
+        <article class="card fade-in" style="box-shadow: var(--shadow-sm);">
+          <div class="card-body" style="padding: 1.5rem;">
+            <h3 class="card-title" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Jingle 7SETE - Oficial</h3>
+            <p class="card-text" style="margin-bottom: 1rem; font-size: 0.85rem;">Música tema da campanha.</p>
+            <audio controls style="width: 100%;">
+              <source src="assets/audio/7SETE.mp3" type="audio/mpeg">
+              Seu navegador não suporta o elemento de áudio.
+            </audio>
+          </div>
+        </article>
+
+        <!-- Áudio 2 -->
+        <article class="card fade-in" style="box-shadow: var(--shadow-sm);">
+          <div class="card-body" style="padding: 1.5rem;">
+            <h3 class="card-title" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Jingle 7SETE - Versão Alternativa</h3>
+            <p class="card-text" style="margin-bottom: 1rem; font-size: 0.85rem;">Segunda versão do jingle da campanha.</p>
+            <audio controls style="width: 100%;">
+              <source src="assets/audio/7SETE-v2.mp3" type="audio/mpeg">
+              Seu navegador não suporta o elemento de áudio.
+            </audio>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <p class="footer-brand-name">SETE LAGOAS POLÍTICA</p>
+        <p class="footer-brand-desc">
+          Diário político, histórico e intelectual de Sete Lagoas.
+          Um espaço para pensar a cidade, a política e a democracia.
+        </p>
+        <p class="footer-aviso">
+          Projeto editorial independente. Conteúdos factuais devem ser acompanhados
+          de fontes públicas e verificáveis.
+        </p>
+      </div>
+
+      <nav aria-label="Links do rodapé">
+        <p class="footer-nav-title">Navegação</p>
+        <ul class="footer-nav-list">
+          <li><a href="index.html"     class="footer-nav-link">Início</a></li>
+          <li><a href="noticias.html"  class="footer-nav-link">Notícias</a></li>
+          <li><a href="manifesto.html" class="footer-nav-link">Manifesto</a></li>
+          <li><a href="sobre.html"     class="footer-nav-link">Sobre</a></li>
+          <li><a href="colunista.html" class="footer-nav-link">Colunista</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Sete Lagoas Política — MVP</p>
+      <p class="footer-tag">Portal Editorial Independente · Sete Lagoas/MG</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
