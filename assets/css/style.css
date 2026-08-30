@@ -2117,3 +2117,135 @@ h1, h2, h3, h4, h5, h6 {
   .charles-img { width: 80px; height: 80px; }
   .charles-content h3 { font-size: 1.2rem; }
 }
+
+/* ══════════════════════════════════════════════
+   GALERIA DE IMAGENS — Acervo
+   ══════════════════════════════════════════════ */
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--gap-lg);
+  margin-top: var(--gap-2xl);
+}
+
+.galeria-item {
+  background: var(--card-bg);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--borda-suave);
+  overflow: hidden;
+  transition: all var(--trans-med);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-card);
+}
+
+.galeria-item:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(218, 37, 29, 0.2);
+}
+
+.galeria-image-container {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  background: var(--fundo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.galeria-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--trans-med);
+}
+
+.galeria-item:hover .galeria-image {
+  transform: scale(1.05);
+}
+
+.galeria-body {
+  padding: var(--gap-lg);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.galeria-title {
+  font-family: var(--font-titulo);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--texto);
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+
+.galeria-desc {
+  font-size: 0.92rem;
+  color: var(--texto-suave);
+  line-height: 1.6;
+  flex: 1;
+  margin-bottom: var(--gap-md);
+}
+
+.btn-small {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.8rem;
+  width: 100%;
+  justify-content: center;
+}
+
+/* FAQ Grid */
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--gap-lg);
+}
+
+/* Responsivo - Galeria */
+@media (max-width: 768px) {
+  .galeria-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .galeria-item {
+    flex-direction: row;
+  }
+  
+  .galeria-image-container {
+    width: 45%;
+    height: auto;
+    min-height: 200px;
+  }
+  
+  .galeria-body {
+    width: 55%;
+  }
+}
+
+@media (max-width: 600px) {
+  .galeria-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .galeria-item {
+    flex-direction: column;
+  }
+  
+  .galeria-image-container {
+    width: 100%;
+    height: 220px;
+  }
+  
+  .galeria-body {
+    width: 100%;
+  }
+  
+  .btn-small {
+    padding: 0.7rem 1rem;
+    font-size: 0.75rem;
+  }
+}
