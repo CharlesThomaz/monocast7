@@ -2249,3 +2249,48 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.75rem;
   }
 }
+
+/* Rádio e chat de dúvidas */
+.portal-radio {
+  position: fixed;
+  z-index: 1000;
+  right: 1rem;
+  bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: min(360px, calc(100vw - 2rem));
+  padding: 0.7rem 0.85rem;
+  color: var(--branco);
+  background: var(--azul-escuro);
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+}
+.portal-radio-info { min-width: 0; flex: 1; }
+.portal-radio-info span { display: block; color: var(--vermelho); font-size: .65rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.portal-radio-info strong { display: block; overflow: hidden; margin-top: .1rem; font-size: .8rem; text-overflow: ellipsis; white-space: nowrap; }
+.portal-radio-actions { display: flex; align-items: center; gap: .35rem; }
+.portal-radio button { display: grid; width: 2.2rem; height: 2.2rem; place-items: center; color: var(--branco); background: transparent; border: 0; border-radius: 50%; cursor: pointer; font-size: 1rem; }
+.portal-radio .portal-radio-play { color: var(--azul-escuro); background: var(--vermelho); font-size: .75rem; }
+.portal-radio-volume input { width: 55px; accent-color: var(--vermelho); cursor: pointer; }
+.portal-chat { position: fixed; z-index: 1001; right: 1rem; bottom: 5.7rem; }
+.portal-chat-toggle { padding: .65rem .85rem; color: var(--branco); background: var(--azul); border: 0; border-radius: 99px; box-shadow: var(--shadow-md); cursor: pointer; font: 700 .78rem var(--font-corpo); }
+.portal-chat-panel { width: min(370px, calc(100vw - 2rem)); margin-bottom: .55rem; overflow: hidden; background: var(--card-bg); border: 1px solid var(--borda); border-radius: var(--radius-md); box-shadow: var(--shadow-lg); }
+.portal-chat-panel header { display: flex; align-items: center; justify-content: space-between; padding: .85rem 1rem; color: var(--branco); background: var(--azul-escuro); }
+.portal-chat-close { color: var(--branco); background: transparent; border: 0; cursor: pointer; font-size: 1.5rem; }
+.portal-chat-messages { display: flex; flex-direction: column; gap: .55rem; max-height: 190px; padding: .8rem; overflow-y: auto; }
+.portal-chat-messages p { width: fit-content; max-width: 100%; padding: .55rem .65rem; color: var(--texto); background: var(--fundo-2); border-radius: .5rem; font-size: .78rem; line-height: 1.4; }
+.portal-chat-messages .portal-chat-user { align-self: flex-end; color: var(--branco); background: var(--azul); }
+.portal-chat-messages .portal-chat-reply { background: var(--fundo); }
+.portal-chat-reply a { display: inline-block; margin-top: .25rem; font-weight: 700; }
+.portal-chat-options { display: flex; flex-wrap: wrap; gap: .35rem; padding: 0 .8rem .8rem; }
+.portal-chat-options button { padding: .32rem .45rem; color: var(--azul-escuro); background: var(--fundo); border: 1px solid var(--borda); border-radius: 99px; cursor: pointer; font: 600 .68rem var(--font-corpo); text-align: left; }
+.portal-chat-options button:hover { color: var(--branco); background: var(--azul); border-color: var(--azul); }
+
+@media (max-width: 600px) {
+  .portal-radio { right: .75rem; bottom: .75rem; width: calc(100vw - 1.5rem); }
+  .portal-chat { right: .75rem; bottom: 5.5rem; }
+  .portal-chat-panel { width: calc(100vw - 1.5rem); }
+  .portal-radio-volume input { width: 40px; }
+}
