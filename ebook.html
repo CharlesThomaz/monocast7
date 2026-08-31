@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Adquira o e-book Pensadores do Social — uma coletânea de reflexões sobre teoria política e pensamento social." />
+  <meta name="keywords" content="e-book, pensadores, teoria social, política, download" />
+  <meta property="og:title" content="E-book Pensadores do Social" />
+  <meta property="og:description" content="Adquira o e-book completo sobre pensadores e pensamento social." />
+  <meta property="og:type" content="website" />
+  <title>E-book Pensadores do Social — Sete Lagoas Política</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/gamification.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Barlow+Condensed:wght@500;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- Barra de progresso de leitura -->
+<div id="reading-progress" class="reading-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Progresso de leitura"></div>
+
+<!-- ═══════════════════════════════════════════
+     HEADER
+     ═══════════════════════════════════════════ -->
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+
+    <!-- Logo -->
+    <a href="index.html" class="site-logo logo-emblema" aria-label="Sete Lagoas Política — Início">
+      <img src="assets/img/logo-384.webp" alt="Logo Sete Lagoas Política" width="384" height="384" decoding="async">
+    </a>
+
+    <!-- Navegação Desktop -->
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="index.html"     class="nav-link">Início</a>
+      <a href="conhecimentos.html" class="nav-link">Conhecimentos</a>
+      <a href="artigos.html"   class="nav-link">Artigos</a>
+      <a href="manifesto.html" class="nav-link">Manifesto</a>
+      <a href="sobre.html"     class="nav-link">Sobre</a>
+      <a href="acervo.html"    class="nav-link">Acervo</a>
+      <a href="ebook.html"     class="nav-link nav-colunista" aria-current="page">E-book</a>
+    </nav>
+
+    <!-- Botão Hamburger -->
+    <button
+      id="menu-toggle"
+      class="menu-toggle"
+      aria-label="Abrir menu"
+      aria-expanded="false"
+      aria-controls="mobile-nav"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+
+  <!-- Navegação Mobile -->
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Menu mobile" aria-hidden="true">
+    <a href="index.html"     class="mobile-nav-link">Início</a>
+    <a href="conhecimentos.html" class="mobile-nav-link">Conhecimentos</a>
+    <a href="artigos.html"   class="mobile-nav-link">Artigos</a>
+    <a href="manifesto.html" class="mobile-nav-link">Manifesto</a>
+    <a href="sobre.html"     class="mobile-nav-link">Sobre</a>
+    <a href="acervo.html"    class="mobile-nav-link">Acervo</a>
+    <a href="ebook.html"     class="mobile-nav-link">E-book</a>
+  </nav>
+</header>
+
+<!-- ═══════════════════════════════════════════
+     MAIN
+     ═══════════════════════════════════════════ -->
+<main id="conteudo-principal">
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" aria-label="Destaque do e-book">
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- Conteúdo Hero -->
+        <div class="hero-content">
+          <span class="hero-label">
+            <span class="hero-label-dot" aria-hidden="true"></span>
+            Recurso Educacional · Acervo Digital
+          </span>
+
+          <h1 class="hero-title">
+            PENSADORES<br />
+            DO<br />
+            <em>SOCIAL</em>
+          </h1>
+
+          <p class="hero-text">
+            Uma coletânea abrangente de reflexões sobre teoria política e pensamento social,
+            rastreando a evolução do pensamento social de Platão aos pensadores contemporâneos.
+          </p>
+
+          <div style="background: rgba(218, 37, 29, 0.15); border: 2px solid var(--azul); border-radius: var(--radius-md); padding: 1rem 1.5rem; margin-bottom: 1.5rem; text-align: center;">
+            <p style="color: var(--azul); font-weight: 700; margin: 0; font-size: 1rem;">
+              ⏰ ACESSO LIMITADO — Apoie a resistência editorial
+            </p>
+            <p style="color: var(--azul); font-size: 0.9rem; margin: 0.5rem 0 0; opacity: 0.9;">
+              Este e-book é produzido de forma independente. Sua aquisição sustenta nosso projeto.
+            </p>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#comprar" class="btn btn-primary">
+              Adquirir agora por Pix
+            </a>
+            <a href="#conteudo" class="btn btn-outline">
+              Saber mais sobre &#8594;
+            </a>
+          </div>
+        </div>
+
+        <!-- Visual Eixo Editorial -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="eixo-card">
+            <p class="eixo-titulo">8 Seções + Conclusão</p>
+            <ol class="eixo-lista">
+              <li class="eixo-item">
+                <span class="eixo-num">01</span>
+                <span class="eixo-text">Raízes Antigas (Platão, Hobbes)</span>
+              </li>
+              <li class="eixo-item">
+                <span class="eixo-num">02</span>
+                <span class="eixo-text">Os Fundadores (Marx, Engels)</span>
+              </li>
+              <li class="eixo-item">
+                <span class="eixo-num">03</span>
+                <span class="eixo-text">Revolução e Reforma</span>
+              </li>
+              <li class="eixo-item">
+                <span class="eixo-num">04</span>
+                <span class="eixo-text">América Latina (Freire, Guevara)</span>
+              </li>
+              <li class="eixo-item">
+                <span class="eixo-num">05</span>
+                <span class="eixo-text">Teoria Crítica</span>
+              </li>
+              <li class="eixo-item">
+                <span class="eixo-num">06</span>
+                <span class="eixo-text">Pensadores Contemporâneos</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SOBRE O EBOOK ─── -->
+  <section class="section" id="conteudo" aria-labelledby="titulo-conteudo">
+    <div class="container">
+      <header class="section-header centered">
+        <span class="section-eyebrow">Recurso Educacional</span>
+        <h2 class="section-title" id="titulo-conteudo">Sobre o E-book</h2>
+        <div class="divider" style="margin:1rem auto 1.5rem;"></div>
+      </header>
+
+      <div class="content-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; margin-bottom: 3rem;">
+        <div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--azul);">O que você vai encontrar?</h3>
+          <p style="margin-bottom: 1.5rem; line-height: 1.8;">
+            Uma jornada intelectual desde <strong>Platão até os pensadores contemporâneos</strong>.
+            O e-book apresenta mais de 20 teóricos sociais, com análises estruturadas, contexto histórico 
+            e aplicações contemporâneas. Perfeito para quem deseja compreender as raízes do pensamento político moderno.
+          </p>
+          <ul style="list-style: none; margin-bottom: 1.5rem;">
+            <li style="margin-bottom: 1rem; display: flex; align-items: flex-start;">
+              <span style="color: var(--azul); font-weight: bold; margin-right: 0.5rem;">✓</span>
+              <span>20+ pensadores estudados (de Platão a Boaventura de Sousa Santos)</span>
+            </li>
+            <li style="margin-bottom: 1rem; display: flex; align-items: flex-start;">
+              <span style="color: var(--azul); font-weight: bold; margin-right: 0.5rem;">✓</span>
+              <span>Análises históricas e contextualização de cada período</span>
+            </li>
+            <li style="margin-bottom: 1rem; display: flex; align-items: flex-start;">
+              <span style="color: var(--azul); font-weight: bold; margin-right: 0.5rem;">✓</span>
+              <span>Interpretação contemporânea das ideias clássicas</span>
+            </li>
+            <li style="margin-bottom: 1rem; display: flex; align-items: flex-start;">
+              <span style="color: var(--azul); font-weight: bold; margin-right: 0.5rem;">✓</span>
+              <span>Estruturado em 8 seções temáticas</span>
+            </li>
+            <li style="display: flex; align-items: flex-start;">
+              <span style="color: var(--azul); font-weight: bold; margin-right: 0.5rem;">✓</span>
+              <span>Acesso perpétuo em PDF digital</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <div style="background: linear-gradient(135deg, var(--azul), var(--azul-claro)); border-radius: var(--radius-lg); padding: 2rem; color: var(--branco); box-shadow: var(--shadow-lg);">
+            <p style="font-size: 0.875rem; opacity: 0.9; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em;">Informações do Produto</p>
+            <h3 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem;">Pensadores do Social</h3>
+            <p style="font-size: 1rem; margin-bottom: 2rem; opacity: 0.95;">De Platão à Teoria Social Contemporânea</p>
+            
+            <div style="border-top: 2px solid rgba(255,255,255,0.3); padding-top: 1.5rem;">
+              <p style="font-size: 0.875rem; opacity: 0.9; margin-bottom: 0.5rem;">Formato:</p>
+              <p style="margin-bottom: 1.5rem; font-weight: 600;">PDF (28 páginas)</p>
+
+              <p style="font-size: 0.875rem; opacity: 0.9; margin-bottom: 0.5rem;">Acesso:</p>
+              <p style="margin-bottom: 1.5rem; font-weight: 600;">Imediato via e-mail</p>
+
+              <p style="font-size: 0.875rem; opacity: 0.9; margin-bottom: 0.5rem;">Licença:</p>
+              <p style="font-weight: 600;">Uso pessoal e educacional</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SUMÁRIO DO E-BOOK ─── -->
+  <section class="section bg-light" id="sumario" aria-labelledby="titulo-sumario" style="background-color: #fafbfc;">
+    <div class="container">
+      <header class="section-header centered">
+        <span class="section-eyebrow">Estrutura Completa</span>
+        <h2 class="section-title" id="titulo-sumario">Sumário e Estrutura</h2>
+        <div class="divider" style="margin:1rem auto 1.5rem;"></div>
+        <p class="section-subtitle">
+          Descubra as 8 seções principais que compõem esta jornada intelectual
+        </p>
+      </header>
+
+      <div style="max-width: 900px; margin: 0 auto; display: grid; gap: 1.5rem;">
+        
+        <div style="background: var(--branco); border-left: 4px solid var(--azul); border-radius: var(--radius-md); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+          <h3 style="color: var(--azul); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">01 · Raízes Antigas</h3>
+          <p style="color: var(--texto-suave); line-height: 1.6;">De Platão até o século XVIII. Exploramos os fundadores do pensamento ocidental que precederam a modernidade: Platão, Hobbes, Saint-Simon.</p>
+        </div>
+
+        <div style="background: var(--branco); border-left: 4px solid var(--azul); border-radius: var(--radius-md); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+          <h3 style="color: var(--azul); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">02 · Os Fundadores</h3>
+          <p style="color: var(--texto-suave); line-height: 1.6;">Século XIX e a explosão das ideias modernas. Marx, Engels, Bakunin e Kropotkin — os arquitetos da teoria social contemporânea.</p>
+        </div>
+
+        <div style="background: var(--branco); border-left: 4px solid var(--azul); border-radius: var(--radius-md); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+          <h3 style="color: var(--azul); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">03 · Revolução e Reforma</h3>
+          <p style="color: var(--texto-suave); line-height: 1.6;">Início do século XX e os grandes conflitos políticos. Rosa Luxemburgo, Bernstein, Lênin, Trotsky, Gramsci e o debate entre revolução e reforma.</p>
+        </div>
+
+        <div style="background: var(--branco); border-left: 4px solid var(--azul); border-radius: var(--radius-md); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+          <h3 style="color: var(--azul); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">04 · Pensamento Social na América Latina</h3>
+          <p style="color: var(--texto-suave); line-height: 1.6;">Che Guevara, Paulo Freire e Florestan Fernandes. Como o pensamento social latinoamericano reinterpretou as teorias globais para nossa realidade.</p>
+        </div>
+
+        <div style="background: var(--branco); border-left: 4px solid var(--azul); border-radius: var(--radius-md); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+          <h3 style="color: var(--azul); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">05 · Teoria Crítica</h3>
+          <p style="color: var(--texto-suave); line-height: 1.6;">Escola de Frankfurt e além. Marcuse, Adorno, Horkheimer — como a crítica ao capitalismo industrial evoluiu no século XX.</p>
+        </div>
+
+        <div style="background: var(--branco); border-left: 4px solid var(--azul); border-radius: var(--radius-md); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+          <h3 style="color: var(--azul); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">06 · Pensadores Contemporâneos</h3>
+          <p style="color: var(--texto-suave); line-height: 1.6;">Michel Foucault, Zygmunt Bauman, Judith Butler, Angela Davis e Boaventura de Sousa Santos. Os intelectuais que pensam o presente e o futuro.</p>
+        </div>
+
+        <div style="background: var(--branco); border-left: 4px solid var(--azul); border-radius: var(--radius-md); padding: 1.5rem; box-shadow: var(--shadow-sm);">
+          <h3 style="color: var(--azul); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">07 · Introdução e Conclusão</h3>
+          <p style="color: var(--texto-suave); line-height: 1.6;">Contextualização histórica, propostas de leitura estruturada e reflexões sobre como esses pensadores nos ajudam a entender a sociedade contemporânea.</p>
+        </div>
+
+      </div>
+
+      <div style="margin-top: 3rem; text-align: center;">
+        <p style="color: var(--texto); font-size: 1.05rem; margin-bottom: 1rem;">
+          <strong>Autor:</strong> Charles Thomaz dos Santos<br/>
+          <strong>Local:</strong> Sete Lagoas, MG<br/>
+          <strong>Ano:</strong> 2026
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── COMPRA VIA PIX ─── -->
+  <section class="section" id="comprar" aria-labelledby="titulo-compra">
+    <div class="container">
+      <header class="section-header centered">
+        <span class="section-eyebrow">Seguro e Simples</span>
+        <h2 class="section-title" id="titulo-compra">Como Adquirir</h2>
+        <div class="divider" style="margin:1rem auto 1.5rem;"></div>
+      </header>
+
+      <div style="max-width: 900px; margin: 0 auto;">
+        
+        <!-- Passos -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+          
+          <div style="text-align: center;">
+            <div style="width: 60px; height: 60px; background: var(--azul); color: var(--branco); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; margin: 0 auto 1rem;">1</div>
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; font-weight: 600;">Contato</h3>
+            <p style="color: var(--texto-suave); line-height: 1.6;">Envie uma mensagem pelo WhatsApp para negociar o valor e detalhes da compra.</p>
+          </div>
+
+          <div style="text-align: center;">
+            <div style="width: 60px; height: 60px; background: var(--azul); color: var(--branco); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; margin: 0 auto 1rem;">2</div>
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; font-weight: 600;">Pagamento</h3>
+            <p style="color: var(--texto-suave); line-height: 1.6;">Faça o Pix ou envie o valor conforme combinado via WhatsApp.</p>
+          </div>
+
+          <div style="text-align: center;">
+            <div style="width: 60px; height: 60px; background: var(--azul); color: var(--branco); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; margin: 0 auto 1rem;">3</div>
+            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; font-weight: 600;">E-book</h3>
+            <p style="color: var(--texto-suave); line-height: 1.6;">Você receberá o e-book via WhatsApp em até 2 horas úteis.</p>
+          </div>
+
+        </div>
+
+        <!-- Aviso de Escassez -->
+        <div style="background: linear-gradient(135deg, #DA251D, #FF6B6B); color: var(--branco); border-radius: var(--radius-lg); padding: 2rem; margin-bottom: 3rem; text-align: center; box-shadow: 0 8px 24px rgba(218, 37, 29, 0.3);">
+          <p style="font-size: 1.2rem; font-weight: 800; margin: 0 0 0.5rem;">⚠️ PRODUÇÃO LIMITADA</p>
+          <p style="font-size: 0.95rem; margin: 0; line-height: 1.6;">
+            Este é um projeto de resistência editorial feito por uma pessoa. A produção é limitada e feita sob demanda. 
+            Quanto mais pessoas apoiam, mais recursos temos para criar novos conteúdos.
+          </p>
+          <p style="font-size: 0.85rem; margin: 1rem 0 0; opacity: 0.95;">
+            ✊ Seja parte desta luta pela educação independente.
+          </p>
+        </div>
+
+        <!-- Informações sobre Financiamento -->
+        <div style="background: linear-gradient(135deg, rgba(218, 37, 29, 0.1), rgba(255, 204, 0, 0.1)); border: 2px solid var(--borda); border-radius: var(--radius-lg); padding: 2rem; margin-bottom: 3rem;">
+          <p style="color: var(--azul); font-weight: 600; margin-bottom: 1rem; font-size: 0.95rem; text-align: center;">ℹ️ FINANCIAMENTO INDEPENDENTE</p>
+          <p style="color: var(--texto); line-height: 1.7; text-align: center; margin-bottom: 1.5rem;">
+            O Sete Lagoas Política é um <strong>projeto editorial independente</strong>. Não recebemos ajudas de órgãos públicos, governos ou empresas. 
+            A venda deste e-book nos ajuda a <strong>manter o site, custear pesquisas e produzir conteúdo de qualidade</strong>. Sua compra é um investimento direto na independência editorial.
+          </p>
+          
+          <div style="background: var(--branco); border-left: 4px solid var(--azul); border-radius: var(--radius-md); padding: 1.5rem; margin-top: 1.5rem;">
+            <p style="color: var(--texto); font-size: 0.95rem; margin-bottom: 1rem;">
+              <strong>Preço sugerido:</strong> R$ 39,90
+            </p>
+            <p style="color: var(--texto-suave); font-size: 0.9rem; line-height: 1.6;">
+              Quem quiser apoiar a causa com mais, fica em paz companheiro. ✊ Toda contribuição, em qualquer valor, é bem-vinda e representa um gesto de resistência ao projeto de educação e independência editorial que defendemos aqui.
+            </p>
+          </div>
+        </div>
+
+        <!-- Informações PIX -->
+        <div style="background: var(--fundo-2); border: 2px solid var(--borda); border-radius: var(--radius-lg); padding: 2rem; margin-bottom: 3rem; text-align: center;">
+          <p style="color: var(--texto-suave); margin-bottom: 1.5rem; font-size: 0.95rem;"><strong>Escolha como enviar o valor:</strong></p>
+          
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+            <div style="background: var(--branco); border-radius: var(--radius-md); padding: 1.5rem; border: 2px dashed var(--azul);">
+              <p style="font-size: 0.9rem; color: var(--texto-suave); margin-bottom: 0.75rem;">💳 VIA PIX</p>
+              <p style="font-size: 1.3rem; font-weight: 800; color: var(--azul); font-family: 'Courier New', monospace; letter-spacing: 2px;">31981216718</p>
+              <p style="margin-top: 0.75rem; color: var(--texto-suave); font-size: 0.85rem;">Copie a chave e use seu banco</p>
+            </div>
+            
+            <div style="background: var(--branco); border-radius: var(--radius-md); padding: 1.5rem; border: 2px dashed #25d366;">
+              <p style="font-size: 0.9rem; color: var(--texto-suave); margin-bottom: 0.75rem;">💬 VIA WHATSAPP</p>
+              <p style="font-size: 1rem; font-weight: 600; margin-bottom: 1rem;">
+                <a href="https://wa.me/5531981216718?text=Ol%C3%A1!%20Tenho%20interesse%20em%20adquirir%20o%20e-book%20Pensadores%20do%20Social.%20Qual%20o%20valor%3F" target="_blank" rel="noopener noreferrer" style="color: #25d366; text-decoration: none; display: inline-block; padding: 0.75rem 1.5rem; border: 2px solid #25d366; border-radius: var(--radius-md); font-weight: 600; transition: all 0.3s;" onmouseover="this.style.backgroundColor='#25d366'; this.style.color='white';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#25d366';">Enviar mensagem</a>
+              </p>
+              <p style="margin-top: 0.75rem; color: var(--texto-suave); font-size: 0.85rem;">Converse direto comigo</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FAQ ─── -->
+  <section class="section bg-light" id="faq" aria-labelledby="titulo-faq" style="background-color: #fafbfc;">
+    <div class="container">
+      <header class="section-header centered">
+        <span class="section-eyebrow">Dúvidas Frequentes</span>
+        <h2 class="section-title" id="titulo-faq">Perguntas e Respostas</h2>
+        <div class="divider" style="margin:1rem auto 1.5rem;"></div>
+      </header>
+
+      <div style="max-width: 800px; margin: 0 auto; display: grid; gap: 1.5rem;">
+        
+        <details style="border: 1px solid var(--borda); border-radius: var(--radius-md); padding: 1.5rem; background: var(--branco);">
+          <summary style="cursor: pointer; font-weight: 600; color: var(--azul); font-size: 1.05rem;">
+            Qual é o formato do e-book?
+          </summary>
+          <p style="margin-top: 1rem; color: var(--texto-suave); line-height: 1.7;">
+            O e-book é entregue em PDF com 28 páginas. É compatível com todos os dispositivos e leitores de PDF (computadores, tablets, smartphones).
+          </p>
+        </details>
+
+        <details style="border: 1px solid var(--borda); border-radius: var(--radius-md); padding: 1.5rem; background: var(--branco);">
+          <summary style="cursor: pointer; font-weight: 600; color: var(--azul); font-size: 1.05rem;">
+            Quantos pensadores estão no e-book?
+          </summary>
+          <p style="margin-top: 1rem; color: var(--texto-suave); line-height: 1.7;">
+            Mais de 20 pensadores! Desde Platão, passando por Marx, Engels, Rosa Luxemburgo, Paulo Freire, chegando até Michel Foucault, Zygmunt Bauman, Judith Butler, Angela Davis e Boaventura de Sousa Santos.
+          </p>
+        </details>
+
+        <details style="border: 1px solid var(--borda); border-radius: var(--radius-md); padding: 1.5rem; background: var(--branco);">
+          <summary style="cursor: pointer; font-weight: 600; color: var(--azul); font-size: 1.05rem;">
+            Preciso ter conhecimento prévio para entender?
+          </summary>
+          <p style="margin-top: 1rem; color: var(--texto-suave); line-height: 1.7;">
+            Não! O e-book é estruturado para iniciantes e pessoas com experiência. Cada pensador é contextualizado historicamente e as ideias são explicadas de forma acessível.
+          </p>
+        </details>
+
+        <details style="border: 1px solid var(--borda); border-radius: var(--radius-md); padding: 1.5rem; background: var(--branco);">
+          <summary style="cursor: pointer; font-weight: 600; color: var(--azul); font-size: 1.05rem;">
+            Posso usar o e-book em sala de aula?
+          </summary>
+          <p style="margin-top: 1rem; color: var(--texto-suave); line-height: 1.7;">
+            Sim! O e-book é licenciado para uso pessoal e educacional. Você pode utilizá-lo como referência em estudos, pesquisas e contextos educacionais. Compartilhamentos indevidos violam os direitos autorais.
+          </p>
+        </details>
+
+        <details style="border: 1px solid var(--borda); border-radius: var(--radius-md); padding: 1.5rem; background: var(--branco);">
+          <summary style="cursor: pointer; font-weight: 600; color: var(--azul); font-size: 1.05rem;">
+            Como faço para entrar em contato?
+          </summary>
+          <p style="margin-top: 1rem; color: var(--texto-suave); line-height: 1.7;">
+            Envie uma mensagem via WhatsApp <strong>(31 98121-6718)</strong> para tirar dúvidas, negociar o valor e receber o e-book. Respondemos em até 2 horas.
+          </p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <p class="footer-brand-name">SETE LAGOAS POLÍTICA</p>
+        <p class="footer-brand-desc">
+          Diário político, histórico e intelectual de Sete Lagoas.
+          Um espaço para pensar a cidade, a política e a democracia.
+        </p>
+        <p class="footer-aviso">
+          Projeto editorial independente. Conteúdos factuais devem ser acompanhados
+          de fontes públicas e verificáveis.
+        </p>
+      </div>
+
+      <nav aria-label="Links do rodapé">
+        <p class="footer-nav-title">Navegação</p>
+        <ul class="footer-nav-list">
+          <li><a href="index.html"     class="footer-nav-link">Início</a></li>
+          <li><a href="conhecimentos.html" class="footer-nav-link">Conhecimentos</a></li>
+          <li><a href="artigos.html"   class="footer-nav-link">Artigos</a></li>
+          <li><a href="manifesto.html" class="footer-nav-link">Manifesto</a></li>
+          <li><a href="sobre.html"     class="footer-nav-link">Sobre</a></li>
+          <li><a href="acervo.html"    class="footer-nav-link">Acervo</a></li>
+          <li><a href="ebook.html"     class="footer-nav-link">E-book</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Redes sociais">
+        <p class="footer-nav-title">Acompanhe</p>
+        <ul class="footer-social-list">
+          <li><a href="https://www.instagram.com/setelagoaspolitica/" class="footer-social-link" target="_blank" rel="noopener noreferrer">Instagram do portal</a></li>
+          <li><a href="https://www.instagram.com/charlesthomazz/" class="footer-social-link" target="_blank" rel="noopener noreferrer">Colunista: @charlesthomazz</a></li>
+          <li><a href="https://open.spotify.com/user/setelagoaspolitica" class="footer-social-link" target="_blank" rel="noopener noreferrer">Spotify: @setelagoaspolitica</a></li>
+          <li><a href="https://www.youtube.com/@setelagoaspolitica" class="footer-social-link" target="_blank" rel="noopener noreferrer">YouTube: @setelagoaspolitica</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Sete Lagoas Política — MVP</p>
+      <p class="footer-tag">Portal Editorial Independente · Sete Lagoas/MG</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/gamification.js"></script>
+</body>
+</html>
